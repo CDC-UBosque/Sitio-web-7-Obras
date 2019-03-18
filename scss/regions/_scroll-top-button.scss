@@ -1,0 +1,38 @@
+// ------------------------ Scroll to top --------------------------- //
+// --------------------------------------------------- //
+
+.scroll-top{
+	
+	#button-top{
+		display: inline-block;
+		background: url('../../images/svg/scroll-top.svg');
+		text-align: center;
+		position: fixed;
+		@include prefix(transition, all .1s ease-in-out, webkit moz o);
+		z-index: 1000;
+		opacity: 0;
+		visibility: hidden;
+		width: 76px;
+		height: 67px;
+		bottom: 5rem;
+		right: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		&:hover{
+			cursor: pointer;
+			bottom: 5.5rem;
+		}
+		
+		&:active{
+			bottom: 5.5rem;
+		}
+		
+	}
+	
+	#button-top.show{
+		opacity: 1;
+		visibility: visible;
+	}
+	
+}

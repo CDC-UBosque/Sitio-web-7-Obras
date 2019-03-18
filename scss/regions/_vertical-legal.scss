@@ -1,0 +1,23 @@
+// ------------------------ menu side --------------------------- //
+// --------------------------------------------------- //
+.right_vertical_text{
+	
+	@include legal_right_footer ();
+	position: absolute;
+	right: calc(0px - 15rem);
+    top: 20rem;
+    transform: rotate(-90deg);
+	
+	span{
+		
+		&:nth-child(1){
+			
+		}
+		
+		&:nth-child(2){
+			margin-left: 10rem;
+		}
+		
+	}
+	
+}

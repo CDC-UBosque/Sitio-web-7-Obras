@@ -1,0 +1,51 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras
+
+block content
+		
+	//- Body tag
+	body.frontpage
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out" data-animsition-out-duration="1000")
+			div.container
+				div.row
+					div.col
+						
+						//- Content & 1
+						div.content_box_home
+							div.title_items
+								h3 Arreglo de <span>7</span> obras del repertorio canciones andinas colombianas para ensamble de jazz
+								
+							div.menu_items
+								h1: a(href='#') El corazón de la caña
+								h1: a(href='#') El formato comando
+								h1: a(href='#') La nueva ola
+								h1: a(href='#') Esperando la siguiente
+								h1: a(href='#') No llegó la otra
+								h1: a(href='#') Terminando la espera
+								h1: a(href='#') Ya será la próxima
+												
+							div.buttons_down
+								a.btn-primary.button.down(href='/como-lo-hicimos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+									span ¿Cómo lo hicimos? 
+								a.btn-primary.animsition-link(href='/hablemos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+									span Hablemos
+									
+							//- Right vertical text (legal)		
+							+right-vertical-text
+					
+		//- Footer	
+		+footer-block
+		
+		

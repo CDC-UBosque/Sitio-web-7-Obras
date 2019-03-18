@@ -1,0 +1,110 @@
+//- ---------------------------- header logo ------------------------------- //
+mixin header-logo
+	div.logo_header_UEB
+		a.button.up(href='../index.html')
+			img(src="../images/svg/logo-UEB.svg" alt="Universidad El Bosque")
+
+
+
+//- ---------------------------- menu ------------------------------- //
+mixin menu
+	div.menu-wrap
+		nav.menu
+			div.icon-list
+				ul.dl-menu
+					li
+						a(href='#' class='title-menu button up'): span Obras
+						
+						ul
+							li
+								a(href='../obras/el-corazon-de-la-cana.html' class='subtitle-menu button up'): span El corazón de la caña
+							li
+								a(href='../obras/a-pesar-de-tanto-gris.html' class='subtitle-menu button up'): span A pesar de tanto gris
+							li
+								a(href='../obras/' class='subtitle-menu button up'): span La nueva ola
+							li
+								a(href='../obras/' class='subtitle-menu button up'): span Esperando la siguiente
+							li
+								a(href='../obras/' class='subtitle-menu button up'): span No llegó la otra
+							li
+								a(href='../obras/' class='subtitle-menu button up'): span Terminando la espera
+							li
+								a(href='../obras/' class='subtitle-menu button up'): span Ya será la próxima						
+					 
+					li
+						a(href='../como-lo-hicimos.html' class='title-menu button up'): span ¿Cómo lo hicimos?
+					li
+						a(href='../quienes-lo-hicimos' class='title-menu button up'): span ¿Quienes lo hicimos?
+					li
+						a(href='../hablemos.html' class='title-menu button up'): span Hablemos
+					
+		button(class='close-button' id='close-button') Close Menu
+		
+	button(class='menu-button' id='open-button') Open Menu
+		
+
+//- ---------------------------- footer ------------------------------- //
+mixin fn(name)
+	if name == "amit"
+		h2 Hello
+	else
+		h4 World
+//- +fn("amit")
+
+mixin footer-block(footer)
+	if footer == "footer-pages"
+		footer.pages
+			//- Left elements
+			div.left
+				a(href='#') 
+					span Inicio
+				a(href='#') 
+					span Acerca de la facultad de diseño y comunicación
+				a(href='#') 
+					span Masdlab
+				a(href='#') 
+					span Centro de diseño
+					
+			div.right
+				p FACULTAD DE DISEÑO Y COMUNICACIÓN UNIVERSIDAD EL BOSQUE  ·  Edificio Fundadores Av. Cra 9 No. 131 A - 02 · Línea Gratuita 018000 113033 · PBX (571) 6489000
+				a(href='../index.html')
+					img(src="../images/svg/facebook-orange.svg" alt="Facebook")
+				a(href='../index.html')
+					img(src="../images/svg/instagram-orange.svg" alt="Instagram")
+				a(href='../index.html')
+					img(src="../images/svg/twitter-orange.svg" alt="Twitter")
+	else
+		//- Footer content	
+		footer.home
+			//- Left elements
+			div.left
+				a(href='#') 
+					span Inicio
+				a(href='#') 
+					span Acerca de la facultad de diseño y comunicación
+				a(href='#') 
+					span Masdlab
+				a(href='#') 
+					span Centro de diseño
+					
+			div.right
+				p FACULTAD DE DISEÑO Y COMUNICACIÓN UNIVERSIDAD EL BOSQUE  ·  Edificio Fundadores Av. Cra 9 No. 131 A - 02 · Línea Gratuita 018000 113033 · PBX (571) 6489000
+				a(href='../index.html')
+					img(src="images/svg/facebook-white.svg" alt="Facebook")
+				a(href='../index.html')
+					img(src="images/svg/instagram-white.svg" alt="Instagram")
+				a(href='../index.html')
+					img(src="images/svg/twitter-white.svg" alt="Twitter")
+				
+				
+//- ---------------------------- Vertical legal text ------------------------------- //
+mixin right-vertical-text
+	div.right_vertical_text
+		span Facultad de Creación y Comunicación // Formación Musical
+		span /////////
+		
+		
+//- ---------------------------- scroll to top button ------------------------------- //		
+mixin scroll-top-button
+	div.scroll-top
+		a#button-top

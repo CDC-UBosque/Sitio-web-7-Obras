@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una coleeción de 7 Obras musicales">
+    <meta name="keywords" content="7 obras, musica, universidad el bosque">
+    <meta name="author" content="Centro De Diseño">
+    <title>The title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/modernizr.custom.js"></script><!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  </head>
+  <body>
+        <div class="scroll-top"><a id="button-top"></a></div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../../js/classie.js"></script>
+    <script src="../../js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../../js/animsition.js" charset="utf-8"></script>
+<script src="../../js/lity.js"></script>
+    <script>
+      $(document).ready(function() {
+      	$('.animsition').animsition();
+      });
+      
+    </script>
+    <script>
+      jQuery(document).ready(function() {
+       
+      	var btn = $('#button-top');
+      	
+      	$(window).scroll(function() {
+      		if ($(window).scrollTop() > 500) {
+      			btn.addClass('show');
+      		} else {
+      			btn.removeClass('show');
+      		}
+      	});
+      	
+      	btn.on('click', function(e) {
+      		e.preventDefault();
+      		$('html, body').animate({scrollTop:0}, '300');
+      	});
+      
+      });
+    </script>
+  </body>
+</html>

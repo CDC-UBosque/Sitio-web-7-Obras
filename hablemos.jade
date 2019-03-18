@@ -1,0 +1,65 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - Hablemos
+
+block content
+		
+	//- Body tag
+	body.frontpage
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out" data-animsition-out-duration="1000")
+			div.container
+				div.row
+					div.col
+						
+						//- Content & 1
+						div.content_box_home
+						
+							div.buttons_up
+								a.btn-primary.button.up(href='../index.html')
+									span Obras
+									
+							div.title_items
+								h2 Hablemos
+								p A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.
+								
+							
+							form
+								div.form-group
+									input(type="text" class="form-control" id="nombre1" aria-describedby="emailHelp" placeholder="Nombre completo")
+									
+								div.form-group
+									input(type="email" class="form-control" id="correo1" aria-describedby="emailHelp" placeholder="Correo electrónico")
+									
+								div.form-group
+									input(type="email" class="form-control" id="tel1" aria-describedby="emailHelp" placeholder="Teléfono")
+									
+								div.form-group
+									textarea(class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comentar")
+									
+								div.form-group.form-check
+									input(type="checkbox" class="form-check-input" id="check1")
+									label(class="form-check-label" for="check1") Autorizo a la Universidad El Bosque para el envío de información. 
+										a(href="#") Términos y condiciones
+									
+								button.btn.btn-primary(type="submit" ) Enviar
+												
+							
+							//- Right vertical text (legal)		
+							+right-vertical-text
+							
+		//- Footer	
+		+footer-block
+		
+		
+			

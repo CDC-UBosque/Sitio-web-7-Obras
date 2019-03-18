@@ -1,0 +1,359 @@
+// ------------------------ typography --------------------------- //
+// --------------------------------------------------- //
+
+@import url("https://use.typekit.net/ozv4mau.css"); // Futura Adobe Fonts - License with centrodediseno@unbosque.edu.co
+
+// ------------------------ font-family: futura-pt, sans-serif;
+// ------------------------ font-family: futura-pt-bold, sans-serif;
+
+/* Light
+		font-family: futura-pt, sans-serif;
+		font-weight: 300;
+		font-style: normal;
+*/
+
+/* Light Oblique
+		font-family: futura-pt, sans-serif;
+		font-weight: 300;
+		font-style: italic;
+*/
+
+/* Book
+		font-family: futura-pt, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+*/
+
+/* Book Oblique
+		font-family: futura-pt, sans-serif;
+		font-weight: 400;
+		font-style: italic;
+*/
+
+/* Medium
+		font-family: futura-pt, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+*/
+
+/* Medium Oblique
+		font-family: futura-pt, sans-serif;
+		font-weight: 500;
+		font-style: italic;
+*/
+
+/* Demi
+		font-family: futura-pt, sans-serif;
+		font-weight: 600;
+		font-style: normal;
+*/
+
+/* Demi Oblique
+		font-family: futura-pt, sans-serif;
+		font-weight: 600;
+		font-style: italic;
+*/
+
+/* Heavy
+		font-family: futura-pt, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+*/
+
+/* Heavy Oblique
+		font-family: futura-pt, sans-serif;
+		font-weight: 700;
+		font-style: italic;
+*/
+
+/* Bold
+		font-family: futura-pt-bold, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+*/
+
+/* Bold Oblique
+		font-family: futura-pt-bold, sans-serif;
+		font-weight: 700;
+		font-style: italic;
+*/
+
+/* Extra Bold
+		font-family: futura-pt, sans-serif;
+		font-weight: 800;
+		font-style: normal;
+*/
+
+/* Extra Bold Oblique
+		font-family: futura-pt, sans-serif;
+		font-weight: 800;
+		font-style: italic;
+*/
+
+// ------------------------------ font-family: roboto, sans-serif;
+
+/* Thin
+		font-family: roboto, sans-serif;
+		font-weight: 200;
+		font-style: normal;
+*/
+
+/* Thin Italic
+		font-family: roboto, sans-serif;
+		font-weight: 200;
+		font-style: italic;
+*/
+
+/* Light
+		font-family: roboto, sans-serif;
+		font-weight: 300;
+		font-style: normal;
+*/
+
+/* Light Italic
+		font-family: roboto, sans-serif;
+		font-weight: 300;
+		font-style: italic;
+*/
+
+/* Regular
+		font-family: roboto, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+*/
+
+/* Italic
+		font-family: roboto, sans-serif;
+		font-weight: 400;
+		font-style: italic;
+*/
+
+/* Medium
+		font-family: roboto, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+*/
+
+/* Medium Italic
+		font-family: roboto, sans-serif;
+		font-weight: 500;
+		font-style: italic;
+*/
+
+/* Bold
+		font-family: roboto, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+*/
+
+/* Bold Italic
+		font-family: roboto, sans-serif;
+		font-weight: 700;
+		font-style: italic;
+*/
+
+/* Black
+		font-family: roboto, sans-serif;
+		font-weight: 900;
+		font-style: normal;
+*/
+
+/* Black Italic
+		font-family: roboto, sans-serif;
+		font-weight: 900;
+		font-style: italic;
+*/
+
+/* ------------------------ Font Styles: ------------------------
+------------------------------------------------------------------------*/
+/* Menu home font style */
+$menu-home-font-size: $font_size_titles;
+$menu-home-line-height: $line_height_titles;
+$menu-home-text-transform: uppercase;
+$menu-home-font-weight: 700;
+$menu-home-font-family: futura-pt-bold, sans-serif;
+$menu-home-color: $color_white;
+
+@mixin menu_home () {
+	font-size: $menu-home-font-size;
+	line-height: $menu-home-line-height;
+	text-transform: $menu-home-text-transform;
+	font-weight: $menu-home-font-weight;
+	font-family: $menu-home-font-family;
+	color: $menu-home-color;
+}
+
+/* h1 font style */
+$h1-font-size: $font_size_titles;
+$h1-line-height: $line_height_titles;
+$h1-text-transform: uppercase;
+$h1-font-weight: 700;
+$h1-font-family: futura-pt-bold, sans-serif;
+$h1-color: $color_orange;
+
+@mixin h1_font () {
+	font-size: $h1-font-size;
+	line-height: $h1-line-height;
+	text-transform: $h1-text-transform;
+	font-weight: $h1-font-weight;
+	font-family: $h1-font-family;
+	color: $h1-color;
+}
+
+/* h3_home font style */
+$h3-home-font-size: $font_size_bigger_regular_text;
+$h3-home-line-height: $line_height_bigger_regular_text;
+$h3-home-font-weight: 300;
+$h3-home-font-family: roboto, sans-serif;
+$h3-home-color: $color_orange;
+
+@mixin h3_home () {
+	font-size: $h3-home-font-size;
+	line-height: $h3-home-line-height;
+	font-family: $h3-home-font-family;
+	font-weight: $h3-home-font-weight;
+	color: $h3-home-color;
+}
+
+/* h5 font style */
+$h5-font-size: $font_size_h5_text;
+$h5-line-height: $line_height_h5_text;
+$h5-text-transform: uppercase;
+$h5-font-weight: 500;
+$h5-font-family: futura-pt, sans-serif;
+$h5-color: $color_orange;
+
+@mixin h5 () {
+	font-size: $h5-font-size;
+	line-height: $h5-line-height;
+	text-transform: $h5-text-transform;
+	font-family: $h5-font-family;
+	font-weight: $h5-font-weight;
+	color: $h5-color;
+}
+		
+/* span home font style */
+$span-home-font-size: $font_size_menu_side_text;
+$span-home-line-height: $line_height_menu_side_text;
+$span-home-text-transform: uppercase;
+$span-home-font-weight: 700;
+$span-home-font-family: futura-pt-bold, sans-serif;
+$span-home-color: $color_orange;
+
+@mixin span_home () {
+	font-size: $span-home-font-size;
+	line-height: $span-home-line-height;
+	text-transform: $span-home-text-transform;
+	font-weight: $span-home-font-weight;
+	font-family: $span-home-font-family;
+	color: $span-home-color;
+}
+
+/* legal right footer font style */
+$legal-right-footer-font-size: $font_size_legal_right_text;
+$legal-right-footer-line-height: $line_height_legal_right_text;
+$legal-right-footer-font-weight: 400;
+$legal-right-footer-font-family: roboto, sans-serif;
+$legal-right-footer-color: $color_orange;
+
+@mixin legal_right_footer () {
+	font-size: $legal-right-footer-font-size;
+	line-height: $legal-right-footer-line-height;
+	font-weight: $legal-right-footer-font-weight;
+	font-family: $legal-right-footer-font-family;
+	color: $legal-right-footer-color;
+}
+	
+/* txt regular font style */
+$regular-text-font-size: $font_size_regular_text;
+$regular-text-line-height: $line_height_regular_text;
+$regular-text-font-weight: 400;
+$regular-text-font-family: roboto, sans-serif;
+$regular-text-color: $color_text;
+
+@mixin regular_text () {
+	font-size: $regular-text-font-size;
+	line-height: $regular-text-line-height;
+	font-weight: $regular-text-font-weight;
+	font-family: $regular-text-font-family;
+	color: $regular-text-color;
+}
+
+/* txt caption font style */
+$caption-text-font-size: $font_size_caption_text;
+$caption-text-line-height: $line_height_caption_text;
+$caption-text-font-weight: 400;
+$caption-text-font-family: roboto, sans-serif;
+$caption-text-color: transparentize($color_text, 0.3);
+
+@mixin caption_text () {
+	font-size: $caption-text-font-size;
+	line-height: $caption-text-line-height;
+	font-weight: $caption-text-font-weight;
+	font-family: $caption-text-font-family;
+	color: $caption-text-color;
+}
+	
+/* menu side font style */
+$menu-side-font-size: $font_size_menu_side_text;
+$menu-side-line-height: $line_height_menu_side_text;
+$menu-side-text-transform: uppercase;
+$menu-side-font-weight: 700;
+$menu-side-font-family: futura-pt-bold, sans-serif;
+$menu-side-color: $color_purple;
+
+@mixin menu_side () {
+	font-size: $menu-side-font-size;
+	line-height: $menu-side-line-height;
+	text-transform: $menu-side-text-transform;
+	font-weight: $menu-side-font-weight;
+	font-family: $menu-side-font-family;
+	color: $menu-side-color;
+}
+
+/* button font style */
+$button-font-size: $font_size_button_text;
+$button-line-height: $line_height_button_text;
+$button-text-transform: uppercase;
+$button-font-weight: 700;
+$button-font-family: futura-pt-bold, sans-serif;
+$button-color: $color_orange;
+
+@mixin button_text () {
+	font-size: $button-font-size;
+	line-height: $button-line-height;
+	text-transform: $button-text-transform;
+	font-weight: $button-font-weight;
+	font-family: $button-font-family;
+	color: $button-color;
+}
+
+/* blockqoute font style */
+$blockqoute-font-size: $font_size_higlight_text;
+$blockqoute-line-height: $line_height_higlight_text;
+$blockqoute-font-weight: 700;
+$blockqoute-font-family: futura-pt-bold, sans-serif;
+$blockqoute-color: $color_orange;
+
+@mixin blockqoute_text () {
+	font-size: $blockqoute-font-size;
+	line-height: $blockqoute-line-height;
+	font-weight: $blockqoute-font-weight;
+	font-family: $blockqoute-font-family;
+	color: $blockqoute-color;
+}
+
+/* nombre equipo font style */
+$nombre-equipo-font-size: $font_size_nombre_equipo_text;
+$nombre-equipo-line-height: $line_height_nombre_equipo_text;
+$nombre-equipo-font-weight: 700;
+$nombre-equipo-font-family: futura-pt-bold, sans-serif;
+$nombre-equipo-color: $color_purple;
+
+@mixin nombre_equipo_text () {
+	font-size: $nombre-equipo-font-size;
+	line-height: $nombre-equipo-line-height;
+	font-weight: $nombre-equipo-font-weight;
+	font-family: $nombre-equipo-font-family;
+	color: $nombre-equipo-color;
+}

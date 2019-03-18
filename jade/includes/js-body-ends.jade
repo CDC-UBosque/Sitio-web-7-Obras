@@ -1,0 +1,44 @@
+//- Page transtitions
+
+
+
+//- Bootstrap js
+script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", crossorigin="anonymous")
+//-  Page transitions
+//- 	link(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+//- 	script(src='js/jquery.dlmenu.js')
+//- 	script(src='js/pagetransitions.js')
+//- Menu js
+script(src='../../js/classie.js')
+script(src='../../js/main.js')
+//- script(src='../js/page-transition.js')
+
+//- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../../js/animsition.js" charset="utf-8"></script>
+<script src="../../js/lity.js"></script>
+
+script.
+		$(document).ready(function() {
+			$('.animsition').animsition();
+		});
+
+script.
+	jQuery(document).ready(function() {
+  
+		var btn = $('#button-top');
+		
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 500) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+		
+		btn.on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop:0}, '300');
+		});
+	
+	});

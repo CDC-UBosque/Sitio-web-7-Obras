@@ -1,0 +1,26 @@
+// ------------------------ menu side --------------------------- //
+// --------------------------------------------------- //
+
+.obras_pages{
+
+	.main{
+		
+		.row{
+			
+			&:nth-child(3){
+				
+				@media (min-width: $breakpoint_2){
+					margin-top: -13rem;
+				}
+				
+			}
+			
+		}
+		
+		.banner_obras{
+			margin-bottom: 2rem;
+		}
+		
+	}
+	
+}

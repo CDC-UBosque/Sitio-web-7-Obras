@@ -1,0 +1,24 @@
+// ------------------------ menu side --------------------------- //
+// --------------------------------------------------- //
+
+blockquote, q{
+	
+	@include blockqoute_text ();
+	margin: 0 0 1rem;
+	position: relative;
+	padding: 0 0 0 1rem;
+	
+	&:before{
+		position: absolute;
+		content: "";
+		background: url(../../images/svg/quote.svg);
+		background-repeat: no-repeat;
+		width: 35px;
+		height: 23px;
+		background-size: contain;
+		top: 0rem;
+		left: calc(0% - 2rem);
+		transition: all .2s ease-in-out;
+	}
+	
+}

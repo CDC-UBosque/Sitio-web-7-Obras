@@ -1,0 +1,27 @@
+// ------------------------------------ Global elements ------------------------------------ 
+@import 'elements/_base';
+@import 'elements/_typography';
+@import 'elements/_mixins';
+@import 'elements/_resets';
+@import 'elements/_generals';
+@import 'elements/_animsition';
+@import 'elements/_video';
+@import 'elements/_lightbox';
+
+
+// ------------------------------------ region elements ------------------------------------ 
+@import 'regions/_menu';
+@import 'regions/_vertical-legal';
+@import 'regions/_footer';
+@import 'regions/_main';
+@import 'regions/_scroll-top-button';
+
+
+
+
+// ------------------------------------ pages elements ------------------------------------ 
+@import 'pages/_frontpage';
+@import 'pages/_caption';
+@import 'pages/_blockqoute';
+@import 'pages/_quienes';
+@import 'pages/_obras';

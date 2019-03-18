@@ -1,0 +1,42 @@
+// ------------------------ menu side --------------------------- //
+// --------------------------------------------------- //
+body.frontpage{
+	
+	background: url(../../images/bg_home.jpg);
+	background-size: cover;
+	
+	.content_box_home{
+			
+			.title_items{
+				margin-bottom: 2rem;
+				
+				h3{
+					@include h3_home ();
+					
+					span {
+						@include span_home ();
+					}
+					
+				}
+				
+			}
+			
+			.menu_items{
+				margin-bottom: 2rem;
+				
+				h1{
+					@include menu_home ();
+					margin-bottom: 0;
+					
+					a{
+						color: $color_white;
+						text-decoration: none;
+					}
+					
+				}
+				
+			}
+			
+		}
+	
+}

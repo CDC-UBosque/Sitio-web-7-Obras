@@ -1,0 +1,101 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - El corazón de la caña
+
+block content
+	
+	//- Body tag
+	body.obras_pages
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out-down" data-animsition-out-duration="1000")
+			div.container
+				
+				div.row
+					div.col
+						//- Right vertical text (legal)		
+						+right-vertical-text
+						
+				div.row.content_box
+					div.col-lg-10
+					
+						div.buttons_up
+							a.btn-primary.animsition-link(href='#' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span El formato comando
+					
+						//- video	
+						div.banner-video.wow.fadeInUp
+							div.col-md-10#video
+								div.embed-container
+									iframe(src="https://www.youtube.com/embed/aqZHI_Wls1k?&rel=0&showinfo=0&controls=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+									
+						div.caption.col-md-5.offset-md-7
+							p La estructura de este arreglo maneja algunos elementos cercanos a la versión original. Desde la introducción hasta la presentación de la segunda estrofa se emplea la misma organización de secciones y número de compases. Con excepción de los solos improvisados, no se agregaron partes nuevas. Las improvisaciones se desarrollaron sobre un fragmento de doce compases de la primera estrofa, los cuales se conectan con los ocho compases finales de esta misma.
+				
+				div.row.content_box
+					div.col-lg-5
+						
+						h5 Obra
+						h1 El corazón de la caña
+						
+						p El corazón de la Caña es un bambuco escrito por José A. Morales, compositor de temas como Pueblito Viejo, Campesina Santandereana, Yo también tuve 20 años, Pescador, Lucero y rio, entre otros. A través de las grabaciones que realizaron de su obra duetos como Garzón y Collazos,  Silva y Villalba o los Hermanos Martínez, las canciones de Morales se han vinculado con el momento histórico en el cual el bambuco tenía el  reconocimiento de música nacional, aspecto que es asociado a un imaginario de un “deber ser” que está ligado al sonido de un época determinada (Rodriguez Melo 2011). 
+						
+						blockquote En este tipo de repertorio, interpretado principalmente por duetos vocales, son escasos y aislados, los ejemplos en los cuales podemos encontrar versiones para ser interpretados por ensambles instrumentales.
+						
+						p El disco del Trío Morales Pino “Famosas Canciones de Colombia” (1977), es uno de los pocos ejemplos de una producción discográfica enfocada puntualmente en explorar, en arreglos para formato instrumental, un repertorio originalmente vocal. Este álbum se establece, por parte de los conjuntos instrumentales, como una excepción a la regla. A parte de este ejemplo, los demás casos que se encuentran son realmente aislados. De esta forma, se puede citar la grabación que realizó Oriol Rangel del bambuco de Luis Uribe Bueno “El Marco de Tu Ventana”, obra incluida en el disco Antología Musical Colombiana (1963), la misma pieza se encuentra en el álbum Amanecer en Bogotá, grabado en 1960 por Jorge Camargo Spolidore Y su Orquesta. En este siglo podemos reseñar la versión del bambuco “Muy Antioqueño” arreglada e interpretada por el pianista Juan Andrés Ospina (2009) y el arreglo del tema “No voy a quedarme” de la compositora Doris Zapata, interpretada por la agrupación Carrera Quinta (2016), liderada por los investigadores del presente proyecto. 
+						
+						p En la práctica del jazz, la interpretación de obras vocales por parte de ensambles instrumentales es mucho más visible en la ejecución de las piezas denominadas como “standards”, repertorio que en gran parte, está constituido por canciones que conforman el “American songbook” (Gioia 2012). Sus melodías son ejecutadas por los instrumentistas de una manera libre, teniendo cada intérprete la posibilidad de construir su propia versión de cada canción. Desde este punto de vista, los pasajes de los arreglos en los cuales las melodías fueron interpretadas por instrumentos de manera solista, la escritura se estableció como un punto de partida, desde el cual cada uno de los músicos desarrolló su interpretación particular. Para que los músicos identificaran los fragmentos en los cuales cumplirían ese rol, escribimos la letra de las melodías, tanto en los scores como en las partes individuales
+							a(href="../images/obras/el-corazon-de-la-cana/ejemplo-1-partitura-saxofon-con-texto.jpg" data-lity data-lity-desc="ejemplo 1 partitura saxofon con texto")  (ejemplo 1). 
+							| De esta manera, se permitía diferenciar los apartes en los que las melodías escritas tenían un carácter obligado y las secciones donde, desde diferentes aspectos como el ritmo, las articulaciones, e incluso adornos, la interpretación de los músicos podían tener mayor libertad. 
+						
+			div.banner_obras 
+				img(src="../images/obras/el-corazon-de-la-cana/el-corazon-de-la-cana.jpg" alt="El corazón de la caña")
+								
+			div.container
+			
+				div.row.content_box
+					div.col-lg-5
+						
+						p Desde el aspecto armónico, este arreglo explora la aplicación de varias técnicas de rearmonización, las cuales tienen como objetivo común, generar un quiebre en las estructuras tonales y el concepto de funcionalidad, el cual puede ser descrito como los acordes de una progresión armónica que derivan sus roles a partir de las relaciones con una tonalidad (Naus 2015). De este modo, encontramos la aplicación de técnicas como: armonización por color, expansión del universo armónico funcional, también llamada melody driven harmony, tonic systems, mayor-menor, vertical y plateu modal
+							a(href="../images/obras/el-corazon-de-la-cana/Ejemplos-2-rearmonizaciones-el-corazon-de-la-cana.pdf" data-lity)  (ejemplo 2).
+							| Teniendo en cuenta los diferentes conceptos armónicos que empleamos, buscamos encontrar un balance entre las distintas herramientas, explorando posibilidades en donde la diversidad de los elementos armónicos no generaran una fragmentación en el discurso general de la pieza. Para garantizar este equilibrio elaboramos un plan, bosquejo, de rearmonización el cual tenía como punto de partida el análisis y comprensión de las diferentes secciones del tema
+							a(href="../images/obras/el-corazon-de-la-cana/el-corazon-de-la-caña-plan-de-arreglo-2.jpg" data-lity data-lity-desc="ejemplo 3 el corazon de la caña plan de arreglo 2")  (ejemplo 3). 
+						
+						p De esta manera, la reexposición de la primera estrofa de la canción fue rearmonizada empleando una técnica llamada sistemas tonales, en inglés denominada tonic systems, proceso a través del cual las progresiones armónicas son generadas a partir de divisiones simétricas de la octava (Naus 2015). Tomando como referencia la tonalidad original de la obra, en este caso Sol mayor, la octava se divide en un intervalo determinado, puede ser terceras mayores o menores, tritono, segundas mayores, etc. Las notas resultantes de la división, se asumen como los posibles centros tonales de la progresión. En el caso de dividir la octava en terceras mayores, se generan tres centros tonales, situación en la que encontramos un estructura que se puede relacionar con el tema Giant Steps del saxofonista John Coltrane (1959) 
+ 						
+						p La aplicación de la herramienta tonic systems, consiste en asumir cada uno de estos acordes resultantes como una tonalidad en la cual pueden entrar en juego todas las posibilidades de sustituciones que se dan en un sistema funcional. Los centros tonales se asumen como el primer grado de una tonalidad mayor, a partir de la cual se pueden generar dos opciones:
+						
+						ul
+							li Reemplazar el primer grado de la tonalidad mayor, por el sexto o tercer grado menores.
+							li Agregar el dominante correspondiente para cada uno de los acordes de llegada. 
+							
+						p De esta forma, el resultado es una progresión con un origen tonal, pero, a través de los cambios y sustituciones internas, generamos una sensación de ambigüedad y no resolución
+							a(href="../images/obras/el-corazon-de-la-cana/Ejemplo-4-corazon-de-la-caña-4.jpg" data-lity data-lity-desc="ejemplo 4 corazon de la caña 4")  (ejemplo 4).
+							| La exploración armónica la complementamos con una búsqueda de diferentes posibilidades y texturas orquestales. Desde este punto de vista, en este arreglo encontramos fragmentos en los cuales los instrumentos que acompañan la melodía principal manejan opciones como escritura en bloque, movimientos independientes de las voces, o como en este caso, pasajes en los cuales dos de los instrumentos melódicos presentan la melodía en octavas. Al tener la idea principal duplicada entre trompeta y flauta, se garantiza una buena proyección, simultáneamente el saxofón cumple un rol complementario, el cual varía, respecto a la melodía, entre movimientos paralelos y contrarios.
+							a(href="../images/obras/el-corazon-de-la-cana/ejemplo-5-corazon-de-la-caña-9.jpg" data-lity data-lity-desc="ejemplo 5 corazon de la caña 9")  (ejemplo 5 ).
+
+			
+				div.row
+					div.col
+						
+						div.buttons_down
+							a.btn-primary.animsition-link(href='#' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span Obras
+								
+					
+		//- Footer	
+		+footer-block("footer-pages")
+		
+		
+		
+
+

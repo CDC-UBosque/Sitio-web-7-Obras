@@ -1,0 +1,125 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - Quiénes lo hicimos
+
+block content
+		
+	//- Body tag
+	body
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out-down" data-animsition-out-duration="1000")
+			div.container
+				
+				div.row
+					div.col
+						//- Right vertical text (legal)
+						+right-vertical-text
+				
+				div.row.content_box.columns-2
+					div.col-lg-5
+					
+						div.buttons_up
+							a.btn-primary.animsition-link(href='../como-lo-hicimos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span ¿Cómo lo hicimos?
+						
+						h1 ¿Quiénes lo hicimos?
+						
+						div.card
+							div.photo
+								img(src="../images/equipo/francy_montalvo.jpg" alt="Francy Montalvo")
+							h2 Francy Montalvo
+							div.caption
+								p Co-investigadora. Productora, pianista, arreglista. 
+							p Pianista y compositora Bogotana, nominada al ©LatinGrammy y a los ©Independent Music Awards como productora, compositora y pianista en el Álbum Carrera Quinta Big Band. Actualmente se desempeña como coordinadora del área de instrumento del Programa de Formación Musical de la Universidad El Bosque. Ha sido ganadora de premios de composición, investigación, interpretación por parte de entidades como el Ministerio de Cultura e Idartes. Dentro de su experiencia como pianista cuenta con amplia trayectoria en conciertos y presentaciones en distintos auditorios y festivales de música en Colombia, Panamá, Brasil y Estados Unidos, destacándose presentaciones en el Rose Theather del Lincoln Center en 2012 con la compañía Misi Producciones en el musical “La Más Grande Historia Jamas Cantada”; y con la agrupación Carrera Quinta el 16º Panama Jazz Festival, el X Festival Internacional de Jazz de la Universidad de los Andes, Latin Music Culture Celebration en Berklee College of music, entre otros. Formó parte del equipo de docentes investigadores creadores del proyecto de Maestría en Músicas Colombianas de la Universidad El Bosque, primer programa con esta titulación en Colombia
+							
+						div.card
+							div.photo
+								img(src="../images/equipo/javier_perez.jpg" alt="Javier Pérez Sandoval")
+							h2 Javier Pérez Sandoval
+							div.caption
+								p Investigador principal del proyecto. Productor, arreglista, guitarrista. 
+							p Compositor y guitarrista bogotano. Nominado a los Premios ©LatinGrammy y a los ©Independent Music Awards por su producción Carrera Quinta Big Band, en la cual participó como Productor, Compositor, Arreglista y Guitarrista. Javier Pérez Sandoval ha sido Ganador de premios de composición, interpretación, investigación y circulación, por parte de entidades como el Ministerio de Cultura e Idartes. Ha sido invitado como tallerista y ponente en eventos académicos en instituciones como Berklee College Of Music, Universidad Católica de Perú, Universidad del Valle, Conservatorio Souza Lima en Sao Paulo Brasil, la Fundación Ciudad del Saber en Panamá, entre otros.  Realizó sus estudios de Maestría en Composición con énfasis en Jazz en la Universidad de Louisville, Jamey Aebersold Jazz Studies Programm. Sus obras han sido interpretadas por orquestas como “The Manhattan School of Music Afro Cuban Jazz Orchestra, dirigida por Bobby Sanabria, Big Band Bogotá 2013 y 2014, Jazz Ensemble I de la Universidad de Louisville, Big Band de la Universidad Pedagógica Nacional y La Orquesta Sinfónica de Loja.
+							
+						div.card
+							div.photo
+								img(src="../images/equipo/ricardo-jaramillo.jpg" alt="Ricardo Jaramillo")
+							h2 Ricardo Jaramillo
+							div.caption
+								p Productor.
+							p Director artístico y musical de la Nueva Filarmonía. Director musical de la Big Band de Bogotá del año 2012 al 2017. En noviembre de 2015 hizo su debut en el Carnegie Hall, dirigiendo al Rebow Ensemble. Jaramillo ha dirigido la Orquesta Sinfónica de Berlín, la Orquesta de la Ciudad de Londres, la Orquesta Sinfónica Provincial de Santa Fe en Argentina, la Orquesta Sinfónica Municipal de Caracas, la Orquesta Sinfónica de Oaxaca, la Orquesta Filarmónica de Bogotá, la Orquesta Sinfónica Nacional, la Orquesta Sinfónica de Eafit, la Orquesta Filarmónica de Cali, la Orquesta Filarmónica Juvenil de Bogotá y la Orquesta Sinfónica Juvenil Batuta. Desde 2004 hasta 2010, fue director asistente de la Orquesta Filarmónica de Bogotá donde desarrolló los ciclos "Filarmónica en los parques" y "Conciertos didácticos" para un público creciente, dentro y fuera del país. Fue director de los discos "Kraken Filarmónico", "Mestizajes" y "Viola Tango Rock Concerto". Ricardo Jaramillo dirigió la OFB en las giras a China (2009) y EEUU (2010). Dirigió en las ediciones de Opera al Parque entre 2005 y 2009 con la Orquesta Filarmónica de Bogotá. Realizó la gala de ópera con el barítono colombiano Valeriano Lanchas y la Orquesta Sinfónica Nacional en 2011. Director invitado en la compañía de zarzuela y ópera de Jaime Manzur en las temporadas 2003, 2004, 2005, 2011 y 2016. Director invitado en la Ópera de Colombia en 2001. Director de los musicales de Misi Producciones desde 2012 hasta hoy. 
+							
+						div.card
+							div.photo
+								img(src="../images/equipo/mauricio-cano.jpg" alt="Mauricio Cano")
+							h2 Mauricio Cano
+							div.caption
+								p Ingeniero de grabación y mezcla.
+							p Ingeniero de Sonido y Productor, con más de 25 años de experiencia en grabación, mezcla y producción musical, lo que lo ha hecho merecedor de cinco premios Grammy y más de doce nominaciones con diversos artistas. Vinculado de 1995 a 2017 a Estudios Audiovisión como ingeniero de sonido (senior). Ha sido el productor de varias bandas musicales como Dr Krápula en el 2005. Fue el Presidente de AES (Audio Engineering Society) Colombia y de la Asociación Colombiana de Audio. Profesor en la Universidad San Buenaventura. Ha participado en la grabación y mezcla de artistas como:  Aterciopelados,  Andrés Cepeda, Juan Carlos Coronel,  Iván Villazón, Sergio Amaris, Jorge Oñate, Jorge Celedón. Silvestre Dangond,  Peter Manjarres, Carlos Mario Zabaleta, Karen Lizarazo, Orquesta Sinfónica de Colombia, Los Gaiteros de San Jacinto, La 33, Bomba Stereo,	Cholo Valderrama, Lucho Bermudez, Toto la Momposina, Jona Camacho, Choquibtown, entre otros. Actualmente se desempeña como gerente, ingeniero de grabación y productor en el  estudio El Patio e’ Ropas. 
+							
+						div.card
+							div.photo
+								img(src="../images/equipo/dario-montoya.jpg" alt="Dario Montoya")
+							h2 Dario Montoya
+							div.caption
+								p Flautista.
+							p Flautista  Colombiano , ingresó a  la  Orquesta sinfónica  de Colombia de la cual fue integrante desde el año  1969.  Fue ganador de un concurso que le permitió viajar a Argentina, donde realizó una especialización en música de cámara con el  cuarteto  Mozarteum.  Como  solista ha efectuado giras por diversas ciudades del país, y ha actuado con la orquesta Sinfónica de Antioquia, Orquesta de Cámara de Manizales, Orquesta Sinfónica Juvenil y en varias ocasiones con la Orquesta Sinfónica de Colombia. En 1991 fue invitado como solista por la Orquesta sinfónica  Municipal de Caracas-Venezuela.
+
+							p Ha sido profesor de flauta en diferentes escuelas de música y universidades como los Andes y conservatorio  de música de la Universidad Nacional de Bogotá. En la actualidad ha sido nombrado como asesor académico de la sección de maderas  para todas las Orquestas juveniles Batuta en el país. Fue integrante de la Orquesta sinfónica de Colombia durante 33 años de los cuales 22 se desempeñó como jefe de  la sección de flautas.
+							
+					div.col-lg-5.columns-2
+						div.card
+							div.photo
+								img(src="../images/equipo/daniel-montoya.jpg" alt="Daniel Montoya")
+							h2 Daniel Montoya
+							div.caption
+								p Bajista.
+							p Daniel es hijo de los reconocidos músicos clásicos Darío Montoya y Mercedes Moreno de Montoya, miembros de la Orquesta Sinfónica de Colombia desde 1968 hasta el 2002  realizó sus estudios en la Pontificia Universidad Javeriana con énfasis en Jazz y bajo eléctrico. En 2002 viaja a Barcelona – España, y toma un curso de verano de Bajo eléctrico y música moderna en el Taller de Musics y posteriormente continúa sus estudios en Colombia.
+							p Actualmente se desempeña como docente de bajo eléctrico, improvisación y teoría del jazz en la Universidad del Bosque en Bogotá.
+							
+						div.card
+							div.photo
+								img(src="../images/equipo/pedro-acosta.jpg" alt="Pedro Acosta")
+							h2 Pedro Acosta
+							div.caption
+								p Baterista.
+							p Realizó sus estudios en Nueva York en la escuela ¨Drummers Collective¨ donde tiene la suerte de permanecer cinco años estudiando principalmente con el gran baterista Canadiense Ian Froman y adicionalmente con excelentes músicos y maestros como Michael Lauren, Kim Plainfield, Brad Flickinger , entre muchos más.
+							p Es en Nueva York donde amplía su conocimientos en la batería y logra mostrar su trabajo en grupos de Rock, Jazz tradicional, Funk/R&B, y música latina, siendo el jazz acústico su principal actividad. Al regresar a Bogotá comienza en firme su trabajo como baterista el cual ha logrado combinar satisfactoriamente con la educación y es así como Pedro Acosta trabaja como profesor asociado de batería en diversas instituciones en en Bogotá,  además de tener un grupo regular de alumnos privados y a la par con esta actividad trabaja con varios grupos de la escena Bogotana en distintos géneros como el Rock, el Jazz, y las nuevas músicas Colombianas.
+							
+						div.card
+							div.photo
+								img(src="../images/equipo/cesar-medina.jpg" alt="Cesar Medina")
+							h2 Cesar Medina
+							div.caption
+								p Saxofonista.
+							p Músico colombiano egresado de la Universidad Pedagógica Nacional. Profesor de Saxofón y Conjuntos en la Universidad El Bosque. Director de la agrupación Zaperoco, ensamble con el cual se ha presentado en diversos Festivales de Jazz en ciudades como Bogotá, Cali, Medellín, entre otras.  Ha sido integrante de varias agrupaciones como “Mojarra Eléctrica”, “Malalma”, “Juan Carlos Padilla Jazz Cuarteto”, “Magenta”, “Calle Mora”, “Bajos Distintos”, “Gina Savino Septeto”, “Juancho Torres Big Band”, entre otros. Ha participado en festivales de música a nivel nacional como Jazz al Parque (2001/02/03/04/07/08), Salsa al Parque, Festival del Porro de San Pelayo, Festival de Música del Pacífico Petronio Alvarez, Barranquijazz, Ajazzgo de Cali, Jazz del Teatro Libre (2005/06/09), Festival Jazz de Popayán, Festival de Teatro de Manizalez , Auditorio Luis Angel Arango, Teatro Jorge Eliécer Gaitán
+							
+						div.card
+							div.photo
+								img(src="../images/equipo/pavel-zuzaeta.jpg" alt="Pavel Zuzaeta")
+							h2 Pavel Zuzaeta
+							div.caption
+								p Trompetista.
+							p Trompetista cubano, graduado en el conservatorio de la Habana Amadeo Roldan, cuenta con una amplia carrera profesional en distintos países, como Italia, Francia, Canadá España, Colombia. Entre lo más destacado de su trabajo, estuvo en el Principado de Mónaco durante 4 años en Cabaret del Gran Casino de Montecarlo en distintos espectáculos, Integrante de la Orquesta del Sporting club de Montecarlo. Actualmente lleva 9 años radicado en Bogotá presentándose en distintos escenarios de la capital. Participación en el festival Jazz al Parque Bogotá, Barranquijazz, Ajazzgo (Cali). Ecuador Jazz Festival, Festival internacional Teatro Libre entre otros.  Nominado al Latin Grammy con el disco Carrera Quinta Big Band. Profesor de trompeta jazz en la universidad Javeriana.
+						
+								
+				div.row
+					div.col
+						
+						div.buttons_down
+							a.btn-primary.animsition-link(href='/hablemos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span Hablemos
+		
+		//- Footer	
+		+footer-block("footer-pages")
+		
+		

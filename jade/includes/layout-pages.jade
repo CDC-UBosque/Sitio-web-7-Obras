@@ -1,0 +1,31 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="Una coleeción de 7 Obras musicales")
+		meta(name="keywords" content="7 obras, musica, universidad el bosque")
+		meta(name="author" content="Centro De Diseño")
+		block title
+			title The title
+		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+		link(rel="stylesheet" type="text/css" href="../css/style.css")
+		script(src="../js/modernizr.custom.js")
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+	body
+		//- mixins file
+		include ../mixins.jade
+		
+		//- body block content
+		block content
+		
+		//- Scroll top
+		+scroll-top-button
+		
+		
+		//- Page transitions js
+		include ./js-body-ends.jade
