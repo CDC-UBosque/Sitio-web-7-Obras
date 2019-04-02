@@ -1,0 +1,87 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - Pesares
+
+block content
+	
+	//- Body tag
+	body.obras_pages
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out-down" data-animsition-out-duration="1000")
+			div.container
+				
+				div.row
+					div.col
+						//- Right vertical text (legal)		
+						+right-vertical-text
+						
+				div.row.content_box
+					div.col-lg-10
+					
+						div.buttons_up
+							a.btn-primary.animsition-link(href='/obras/el-corazon-de-la-cana.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span El corazón de la caña
+								
+						//- video	
+						div.banner-video.wow.fadeInUp
+							div.col-md-10#video
+								div.embed-container
+									iframe(src="#" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+									
+						div.caption.col-md-5.offset-md-7
+							p Las exploraciones armónicas realizadas tanto en esta obra, como en los demás arreglos, parecieran estar desarrolladas de un modo puramente teórico. Sin embargo, la búsqueda de la construcción de un lenguaje que se aleje de las estructuras funcionales, está mucho más cercana a procesos intuitivos basados en la comprensión auditiva. Wayne Naus, en su libro Advanced Harmonic Concepts (2015),  comenta cómo los compositores que escriben en sistemas no funcionales, trabajan alejados de lo visual y lo analítico, el reto según Naus, es ir más allá del concepto y evitar caer en procesos puramente mecánicos.
+				
+				div.row.content_box
+					div.col-lg-5
+						
+						h5 Obra
+						h1 Pesares
+						
+						p La obra de José Barros ha sido asociada principalmente con ritmos como la cumbia o el porro. Sin embargo, también compuso pasillos, boleros, tangos, merengues, valses, entre otros. Pesares, es un pasillo que fue compuesto para su segunda esposa, Amelia Caraballo. (Bassi 2015). En el arreglo de esta pieza exploramos decididamente, desde la armonía, sonoridades propias del jazz modal y contemporáneo. A través del tratamiento armónico propuesto, se generó una textura ambigua, a partir de la cual se creó un discurso nuevo. 
+						
+						blockquote El término modalidad, puede tener distintas implicaciones, en el contexto de este proyecto está basado en los conceptos expuestos por el compositor Ron Miller en su libro “Modal Jazz Composition & Harmony” (1996), en donde define tres categorías de composiciones modales: vertical modal, plateu modal y lineal  modal. 
+						
+						p La categoría vertical modal, hace referencia a composiciones con un ritmo armónico de cambios constantes, líneas de bajo activas y ausencia de relaciones diatónicas. Plateu modal se identifica por ritmos armónicos que cambian de manera lenta, líneas de bajo poco activas, ausencia de relaciones diatónicas y simetría en el ritmo armónico. Lineal modal, se caracteriza por temas construidos principalmente por vamps, en los cuales un solo modo puede identificar una sección entera o incluso el tema completo. En el caso de esta canción, la rearmonización se puede clasificar como vertical modal. Los modos que son empleados en el arreglo, son provenientes de la escala menor melódica. Las estructuras, o voicings, empleados en estos acordes modales, presentan una organización que se aleja de lo triádico. Ron Miller propone diferentes formas de organizar las voces, algunas basadas en intervalos de cuartas, clusters, o esquemas en los cuales se combinan estas opciones.
+						
+						p En la rearmonización de esta obra, también empleamos recursos desarrollados  por el compositor y trompetista Wayne Naus, quien en sus publicaciones Beyond Functional Harmony (1998), y Advanced Harmonic Concepts (2015), presenta una serie de herramientas a través de las cuales, se pueden explorar lenguajes armónicos que no sean dependientes de una tonalidad. Para Naus, la diferencia puntual entre lo no funcional y lo funcional, consiste en la ausencia de enlaces provenientes del círculo de quintas y patrones relacionados con la progresión II-V-I (Naus 1998). Cuando los acordes de la obra no son derivados de una tonalidad, si no de la melodía misma, el proceso es denominado “melody driven harmony”. De esta manera, el punto de partida es solamente la melodía de la obra, no se tienen en cuenta los acordes originales de la pieza. Tomando como referencia la armonía original, el contraste y cambio, es bastante fuerte y acentuando, creando un duplicidad en la cual conviven una melodía totalmente diatónica, en este caso en la tonalidad de Em, y una armonía absolutamente alejada de ese sentido funcional.
+							a(href="../images/obras/pesares/pesares-1.jpg" data-lity data-lity-desc="ejemplo 1 pesares") (Ejemplo 1).
+						
+			div.banner_obras 
+				img(src="../images/obras/pesares/pesares.jpg" alt="Pesares")
+								
+			div.container
+			
+				div.row.content_box
+					div.col-lg-5
+						
+						p El contorno melódico de la canción, al igual que la figuración rítmica de la misma, permitió la aplicación de la rearmonización modal. Los acordes los escogimos siguiendo un proceso cercano a la técnica melody driven harmony (Neus 2015). Esta selección se puede realizar o bien de manera aleatoria o de un modo controlado. En el primer caso se asigna, totalmente al azar, un número a cada nota, el cual debe corresponder a un grado de una escala. Cada altura puede ser asumida como cualquier nota del acorde o una posible tensión de este (Fundamental, 9, b9, #9, 3ª menor, 3ª mayor, 4, #11, etc). Una vez se selecciona el grado, se establece el acorde correspondiente. La segunda opción parte de la premisa que el creador tiene total claridad de la relación que busca generar entre la melodía y el acorde, entendiendo, por ejemplo, que la sonoridad puede cambiar drásticamente si la melodía es una tensión, o si esta hace parte de la triada o cuatriada, en este caso, la decisión no puede ser tomada aleatoriamente. Parte del proceso de rearmonización fue construido a partir de bosquejos en los cuales exploramos las distintas posibilidades que el tema nos presentaba
+							a(href="../images/obras/pesares/Pesares-plan-de-arreglo.jpg" data-lity data-lity-desc="ejemplo 1 pesares plan de arreglo")  (ejemplo 2). 
+						
+						p En ambas opciones, encontramos como en los compases donde aparecen notas con duración de blanca o negra con punto, se abren las opciones para que esas alturas puedan ser asumidas como cualquier grado o modo. Los pasajes en los cuales se encuentran melodías muy activas y con mucho movimiento rítmico, cada altura se convierte en una variable, dificultando la aplicación de la herramienta melody driven harmony.
+
+			
+				div.row
+					div.col
+						
+						div.buttons_down
+							a.btn-primary.animsition-link(href='/obras/el-vuelo.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span El vuelo
+								
+					
+		//- Footer	
+		+footer-block("footer-pages")
+		
+		
+		
+
+

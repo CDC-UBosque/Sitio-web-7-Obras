@@ -1,0 +1,96 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - El vuelo
+
+block content
+	
+	//- Body tag
+	body.obras_pages
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out-down" data-animsition-out-duration="1000")
+			div.container
+				
+				div.row
+					div.col
+						//- Right vertical text (legal)		
+						+right-vertical-text
+						
+				div.row.content_box
+					div.col-lg-10
+					
+						div.buttons_up
+							a.btn-primary.animsition-link(href='/obras/pesares.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span Pesares
+								
+						//- video	
+						div.banner-video.wow.fadeInUp
+							div.col-md-10#video
+								div.embed-container
+									iframe(src="https://www.youtube.com/embed/2Dq87bgpAOM?&rel=0&showinfo=0&controls=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+									
+						div.caption.col-md-5.offset-md-7
+							p Desde la letra de la obra,  la pieza puede relacionarse como una canción de amor, pero más que una declaración, es un relato acerca de las relaciones, las cuales no son una línea recta sino que precisamente presenta alteraciones. El arreglo busca, a partir del hilo conductor de la melodía, generar esa sensación de los cambios y fluctuaciones constantes que se presentan en la vida. 
+				
+				div.row.content_box
+					div.col-lg-5
+						
+						h5 Obra
+						h1 El vuelo
+						
+						p El vuelo es un bambuco compuesto por Luz Marina Posada (2006), cantautora antioqueña que en los últimos años se ha posicionado como uno de los referentes más importantes en la canción andina colombiana, siendo ganadora y finalista de Festivales como Hatoviejo-Cotrafa (2010), Festival Nacional del Bunde (2011)y Festival Nacional del Bambuco (2004). Sus obras son constantemente interpretadas por los participantes en las categorías vocales de los festivales y concursos enfocados en estas músicas. 
+						
+						blockquote A pesar de la ausencia de la letra, la melodía se convierte en el elemento transversal y principal a partir del cual se construye el discurso del arreglo, tomando vía libre en el manejo de la estructura y la armonía. 
+						
+						p Desde el manejo de la forma, el arreglo de este bambuco de Luz Marina Posada, es una de las piezas en las cuales se involucraron la mayor cantidad de elementos que no están presentes en la versión de la cantautora. La introducción originalmente consiste en la guitarra sola presentando tanto el ritmo de bambuco, como la tonalidad de la canción. En el arreglo, la introducción presenta un manejo totalmente diferente.
+						
+						p La primera versión de la introducción de esta pieza estaba construida a partir de la misma melodía empleada en la grabación original de Luz Marina Posada, armonizandola a manera de tutti, con acordes So What que seguían un secuencia en movimientos paralelos
+							a(href="../images/obras/el-vuelo/El-vuelo-intro-alternativo.jpg" data-lity data-lity-desc="El vuelo intro alternativo")  (ejemplo 1).
+							| Esta idea nunca fue tocada en los ensayos previos a la grabación. En el proceso de revisión y pruebas, fue reemplazada por una introducción en la cual el piano interpreta el mismo fragmento de manera solista. Decidimos llevar a cabo este cambio en un momento en el cual estábamos realizando una exploración personal, en torno a sistemas de rearmonización modal. De esta forma, la melodía de la introducción de El Vuelo fue empleada como parte de esa indagación sonora. La razón principal para decantarse por la versión del piano solo, en contra de la presentación que incluía la banda completa, consistía en las posibilidades de contraste que se podían generar entre el piano solista y las secciones que aparecerian posteriormente en el arreglo, especialmente aquellas en las que se aprovecha todo el rango dinámico que ofrecen, simultáneamente, los siete instrumentos del ensamble.
+						
+						p Para conectar esta introducción con la primera estrofa del tema, creamos una nueva sección que funcionara tanto como extensión de la intro, como puente para llegar a la primera estrofa. De esta manera, se presenta un vamp en el bajo eléctrico, sobre el cual se van agregando los demás instrumentos para conducir a la siguiente parte. A partir de esa representación, la cual desdibuja la rítmica del bambuco, se expone la melodía principal de la canción. 
+						
+			div.banner_obras 
+				img(src="../images/obras/el-vuelo/el-vuelo.jpg" alt="El vuelo")
+								
+			div.container
+			
+				div.row.content_box
+					div.col-lg-5
+						
+						p Desde el tratamiento armónico, esta pieza explora una serie de texturas que generan una ambigüedad constante. Desde la línea interpretada por el bajo eléctrico, se establece un pedal modal en La Eolico. La guitarra y el piano apoyan la construcción de la sonoridad modal a partir de la aplicación de disposiciones de acordes que se alejan de estructuras triádicas
+							a(href="../images/obras/el-vuelo/El-vuelo-ejemplo-2.jpg" data-lity data-lity-desc="El vuelo ejemplo 2")  (Ejemplo 2). 
+							| El hecho que la melodía de esta sección sea totalmente diatónica, permite la aplicación de este sonoridad modal, la cual genera la sensación de ausencia de estabilidad. Del mismo, el arreglo también explora armonías que pueden ser definidas como tonales, sin embargo, a través de la expansión de las funciones de los acordes, las progresiones originales son sustituidas por enlaces en los cuales lo movimientos de las fundamentales presentan giros inesperados, alejándose de esta manera, de la predictibilidad propia del sistema tonal. En el compás 56 del arreglo, encontramos un fragmento el cual originalmente esta en A menor, en este caso la rearmonización mantiene las mismas funciones armónicas, la diferencia se presenta en los acordes que cumplen estos roles, el ejemplo anexo explica en detalle el sistema de sustitución empleado.
+							a(href="../images/obras/el-vuelo/El-vuelo-ejemplo-3.jpg" data-lity data-lity-desc="El vuelo ejemplo 3")  (Ejemplo 3).
+							
+						p De acuerdo a las características armónicas de la pieza, encontramos que la textura a generar en los instrumentos de viento, debía ajustarse a este contexto, apoyando el carácter abierto y carente de resolución armónica. Proponer desde las contramelodías, una participación muy activa, podría conllevar en una saturación de la sonoridad general del arreglo. De esta forma, los instrumentos que acompañan la voz principal, presentan una melodía construida a partir de notas largas, las cuales tienen un rol claramente armónico. Con el objetivo de generar variedad en esta textura, manejamos dos opciones, en algunas ocasiones los instrumentos que cumplen este papel se presentan en unísono, en otras, fueron armonizados buscando emplear intervalos que reforzaran la sonoridad modal, principalmente cuartas o segundas
+							a(href="../images/obras/el-vuelo/El-vuelo-ejemplo-4.jpg" data-lity data-lity-desc="El vuelo ejemplo 4")  (Ejemplo 4). 
+							
+						p Del mismo modo, se encuentra la aplicación de un concepto de creación de contramelodías llamado escritura lineal (Pomeroy 1970), en el cual las melodías secundarias son construidas a partir de notas guías de la armonía. De esta forma, se realiza una conducción melódica que presenta grados como terceras y séptimas. Para brindarle interés a las frases, se agregan notas de paso y pequeños adornos ritmo-melódicos.
+							a(href="../images/obras/el-vuelo/El-vuelo-ejemplo-5.jpg" data-lity data-lity-desc="El vuelo ejemplo 5")  (Ejemplo 5 )
+
+			
+				div.row
+					div.col
+						
+						div.buttons_down
+							a.btn-primary.animsition-link(href='/obras/a-bordo-de-tu-voz.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span A bordo de tu voz
+								
+					
+		//- Footer	
+		+footer-block("footer-pages")
+		
+		
+		
+
+

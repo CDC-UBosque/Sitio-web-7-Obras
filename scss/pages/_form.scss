@@ -1,0 +1,29 @@
+// ------------------------ menu side --------------------------- //
+// --------------------------------------------------- //
+.content_box_home.formulario{
+			
+	form{
+		max-width: 500px;
+		
+		.form-group{
+			
+			.form-control{
+				padding: 1.5rem 1rem;
+				color: $color_grey_dark;
+				font-size: $font_size_button_text;
+				@include prefix(border-radius, 0px, webkit moz);
+			}
+			
+		}
+		
+		.form-check{
+			
+			.form-check-label{
+				color: $color_white;
+			}
+			
+		}
+		
+	}
+	
+}

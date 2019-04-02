@@ -1,0 +1,95 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - El beso que le robe a la luna
+
+block content
+	
+	//- Body tag
+	body.obras_pages
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out-down" data-animsition-out-duration="1000")
+			div.container
+				
+				div.row
+					div.col
+						//- Right vertical text (legal)		
+						+right-vertical-text
+						
+				div.row.content_box
+					div.col-lg-10
+					
+						div.buttons_up
+							a.btn-primary.animsition-link(href='/obras/a-bordo-de-tu-voz.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span A bordo de tu voz
+								
+						//- video	
+						div.banner-video.wow.fadeInUp
+							div.col-md-10#video
+								div.embed-container
+									iframe(src="#" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+									
+						div.caption.col-md-5.offset-md-7
+							p La mayoría de las canciones que escogimos presentan originalmente una estructura armónica tonal, en las cuales las funciones y roles de los acordes son perfectamente identificables. Desde las rearmonizaciones buscamos crear una dualidad; presentar melodías diatónicas sobre estructuras armónicas que desdibujaran esas sesiones de tonalidad. 
+				
+				div.row.content_box
+					div.col-lg-5
+						
+						h5 Obra
+						h1 El beso que le robé a la luna
+						
+						p El arreglo del bambuco de Luis Enrique Aragón, El beso que le robé a la luna, fue una de las obras en las  que buscamos mantener más  elementos cercanos a la versión original del tema, característica que se evidencia desde el manejo de la estructura y la armonía. La pieza es una canción de dos secciones, normalmente interpretada sin solos improvisados. Desde el punto de vista armónico se manejaron dos opciones: una en la cual el ciclo armónico, respecto a la versión original, no presentaba  cambios. En la otra, se aplicaron herramientas de rearmonización, como melody driven harmony (Naus 2015) y expansión del universo armónico funcional, procesos que desdibujaron la sensación de tonalidad de la obra, generando un sentido de ambigüedad tonal.
+						
+						blockquote En el manejo de las estructuras, la inclusión de la improvisación nos generó un cuestionamiento acerca del balance que iba a tener la interacción entre tres elementos: las estrofas de las canciones, los solos improvisados y las secciones nuevas que fueran creadas en los arreglos, entendiendo estas como introducciones, puentes, interludios y codas. 
+						
+						p El jazz se ha caracterizado, principalmente, por emplear formas cíclicas basadas en estrofas, siguiendo estructuras que comúnmente presentan el siguiente modelo: melodía principal-improvisaciones-melodía principal (Schroedl 2000). Del mismo modo, desde comienzos del siglo XX, la improvisación se ha establecido como un elemento transversal en el género (Gridley 200). Sin embargo, desde los intérpretes de jazz que se acercan a procesos compositivos, elementos como el manejo de la forma y la instrumentación, aparecen en algún momento como generadores de cuestionamientos creativos. De esta manera, se puede encontrar como algunos músicos llegan a los grandes formatos instrumentales, descubriendo en ellos un escenario en el cual confluyen, tanto la espontaneidad de la improvisación, como los elementos escritos, a través de los cuales, el arreglista plasma las ideas tímbricas, armónicas, estructurales y melódicas, que no se pueden expresar en una improvisación (Lawn 2018).
+						
+						p En todos  los arreglos se crearon puentes o interludios, los cuales tienen como objetivo principal conectar las estrofas con las secciones improvisadas. En este elemento, se evidencia la influencia del estilo de músicos vinculados a la práctica del jazz como Thad Jones, Maria Scheneider y Duke Ellington; todos ellos artistas que se alejan del manejo de estructuras cíclicas. Si bien el formato empleado en este proyecto no es el de big band, la presencia de tres instrumentos de viento, más la base rítmica, abre las posibilidades para vincular características encontradas en el análisis realizado de los músicos referenciados
+							a(href="#")  (ejemplo 2 tabla formas).
+						
+						p Desde la organización de los instrumentos de viento exploramos  tres posibilidades: una textura de tipo solista, con un solo instrumento interpretando la melodía y la base rítmica acompañándolo. Otra organización de carácter contrapuntístico, en la cual la melodía principal, dialoga con otras melodías que tienen un manejo independiente, y finalmente, Tuttis, entendiéndolos como secciones en las cuales los tres instrumentos van organizados en un solo bloque, siendo apoyados incluso por la base rítmica.
+						
+			div.banner_obras 
+				img(src="../images/obras/el-beso-que-le-robe-a-la-luna/el-beso-que-le-robe-a-la-luna.jpg" alt="El beso que le robé a la luna")
+			div.container
+			
+				div.row.content_box
+					div.col-lg-5
+							
+						p En la primera estrofa de este arreglo buscamos darle claridad y proyección a la melodía, razón por la cual se interpreta en un solo instrumento, en este caso el saxofón. En la repetición de esta sección agregamos dos elementos, el primero respuestas improvisadas, la segunda una contramelodía con un rol de acompañamiento ritmo-armónico la cual confluye, en los últimos cuatro compases de la sección, en una armonización de tipo seccional
+							a(href="../images/obras/el-beso-que-le-robe-a-la-luna/el-beso-ejemplo-melodia.jpg" data-lity data-lity-desc="El beso ejemplo 2")  (Ejemplo 2 ). 
+
+						p Una vez se tienen los tres instrumentos de viento de manera simultánea, construimos un tutti el cual es armonizado empleando diferentes técnicas. Flauta y trompeta se armonizan en octavas, mientras que el saxofón se ubica en la parte central del bloque, ejecutando, respecto a la melodía principal, movimientos paralelos y contrarios. En la verticalidad de las tres voces se genera una segunda voz que se ajusta a los acordes definidos en la rearmonización de la sección, de esta forma se presentan, entre flauta y saxofón,  intervalos como terceras y quintas
+							a(href="../images/obras/el-beso-que-le-robe-a-la-luna/el-beso-ejemplo-5.jpg" data-lity data-lity-desc="El beso ejemplo 3")  (Ejemplo 3). 
+
+						p Desde el tratamiento armónico, en este arreglo buscamos aplicar varias herramientas de rearmonización en un mismo fragmento, a diferencia del manejo que le dimos a las demás obras, en las cual empleamos un solo concepto armónico por sección. Es así como en la repetición de la primera estrofa para los acordes con función tónica o subdominante, y en donde la melodía presentara notas largas, empleamos el concepto melody driven harmony, los dominantes los rearmonizamos con herramientas de expansión del universo armónico funcional.
+							a(href="../images/obras/el-beso-que-le-robe-a-la-luna/el-beso-ejemplo-5-rearmonizacion.jpg" data-lity data-lity-desc="El beso ejemplo 4")  (ejemplo 4,)
+							a(href="../images/obras/el-beso-que-le-robe-a-la-luna/el-beso-ejemplo-6-rearmonizacion" data-lity data-lity-desc="El beso ejemplo 5")  (ejemplo 5).
+							| En la introducción del arreglo buscamos generar un sonoridad lineal modal. El carácter diatónico de la melodía permitía crear un pedal, en el cual el bajo podría tocar cualquier de las notas de la tonalidad, en este caso decidimos hacerlo sobre E Frigio.
+							a(href="../images/obras/el-beso-que-le-robe-a-la-luna/el-beso-ejemplo-7.png" data-lity data-lity-desc="El beso ejemplo 6")  (ejemplo 6)
+
+			
+				div.row
+					div.col
+						
+						div.buttons_down
+							a.btn-primary.animsition-link(href='/obras/despues-que-me-olvide-de-ti.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span Después que me olvide de tí
+								
+					
+		//- Footer	
+		+footer-block("footer-pages")
+		
+		
+		
+
+

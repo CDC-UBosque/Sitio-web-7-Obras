@@ -366,7 +366,11 @@
 		opacity: 0;
 	}
 	
-	&:hover{
+	&:hover,
+	&:focus,
+	&:active,
+	&:not(:disabled):not(.disabled).active,
+	&:not(:disabled):not(.disabled):active{
 		border: 3px solid $color_orange;
 		background: none;
 		color: $color_orange;

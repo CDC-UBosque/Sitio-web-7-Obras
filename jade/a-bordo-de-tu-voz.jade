@@ -1,0 +1,100 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - A bordo de tu voz
+
+block content
+	
+	//- Body tag
+	body.obras_pages
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out-down" data-animsition-out-duration="1000")
+			div.container
+				
+				div.row
+					div.col
+						//- Right vertical text (legal)		
+						+right-vertical-text
+						
+				div.row.content_box
+					div.col-lg-10
+					
+						div.buttons_up
+							a.btn-primary.animsition-link(href='/obras/el-vuelo.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span El vuelo
+								
+						//- video	
+						div.banner-video.wow.fadeInUp
+							div.col-md-10#video
+								div.embed-container
+									iframe(src="#" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+									
+						div.caption.col-md-5.offset-md-7
+							p La escritura de los arreglos deja lugar, tanto para los elementos que están totalmente escritos en las partes de cada uno de los intérpretes, como para la improvisación y la espontaneidad, brindándole libertad en las decisiones, que en ciertos momentos, cada uno de los músicos puede tomar.
+				
+				div.row.content_box
+					div.col-lg-5
+						
+						h5 Obra
+						h1 A bordo de tu voz
+						
+						p A Bordo de tu voz es una guabina compuesta por Luz Marina Posada (2006). En el arreglo buscamos crear un contraste entre dos componentes, una primera sección que mantiene una idea bastante cercana al original, y una reexposición en la cual se desdibujan completamente los elementos armónicos, rítmicos y tímbricos. De esta manera encontramos como, a través de la línea del bajo eléctrico, se genera una textura en la cual el sentido del ritmo de guabina se difumina, aspecto que se suma a una rearmonización que busca alejarse del esquema tonal propuesto por la autora de la canción
+							a(href="../images/obras/a-bordo-de-tu-voz/a-bordo-de-tuz-voz-2.jpg" data-lity data-lity-desc="A bordo de tu voz")   (ejemplo 1).  
+						
+						blockquote En este proceso, el formato se ve como un elemento integrador, donde cada uno de los instrumentos  aportan en la construcción del discurso a partir de una interacción continua entre ellos.
+						
+						p En géneros cercanos a las músicas populares, la escritura de los instrumentos de la base rítmica presenta la característica particular, que las partes combinan tanto, fragmentos donde el músico encuentra que su papel esta totalmente escrito y definido, como pasajes en los cuales la notación esta construida a partir de la cifra armónica y esquemas rítmicos sugeridos, pero es el intérprete, quien, a partir, tanto de un proceso intuitivo, como del conocimiento del estilo, y la escucha grupal, define las disposiciones de los acordes, registros y combinaciones de patrones de acompañamiento (Doezema 86). De esta manera, en la elaboración de los arreglos, la batería es el instrumento que tiene una escritura más libre, su parte consiste en el guión melódico de las canciones, y eventualmente, si el arreglo lo exige, se indica la línea del bajo eléctrico como referencia. La guitarra y el piano manejaron una escritura dual, en algunos pasajes presentan obligados ritmo-melódicos, en otros se escribió la cifra armónica y ciertas sugerencias de intenciones y maneras de organizar los esquemas de acompañamiento
+							a(href="../images/obras/a-bordo-de-tu-voz/Corazon-de-la-cana-guitarra-pagina-3.jpg" data-lity data-lity-desc="Corazón de la caña guitarra")  (ejemplo 2), 
+							a(href="../images/obras/a-bordo-de-tu-voz/parte-piano-el-vuelo-1.jpg" data-lity data-lity-desc="Parte piano el vuelo 1")  (ejemplo 3), 
+							a(href="../images/obras/a-bordo-de-tu-voz/parte-piano-el-vuelo-2.jpg" data-lity data-lity-desc="Parte piano el vuelo 2")  (ejemplo 4). 
+							| De esta forma, la improvisación y la espontaneidad, juegan un rol importante en la interpretación de las obras, abriendo la oportunidad para que cada vez que sean tocadas, se encuentren y presenten elementos nuevos.
+						
+			div.banner_obras 
+				img(src="../images/obras/a-bordo-de-tu-voz/a-bordo-de-tu-voz.jpg" alt="A bordo de tu voz")
+								
+			div.container
+			
+				div.row.content_box
+					div.col-lg-5
+						
+						p Desde la armonía, el arreglo de esta canción buscó generar un contraste entre dos elementos, los enlaces armónicos presentes en la versión original y una rearmonización que buscaba desdibujar completamente la estructura tonal de la versión de Luz Marina Posada. Los conceptos que entran en diálogo son lo funcional y lo modal.  En la introducción, la versión original emplea una progresión I-IV-V-I, este esquema armónico es reemplazado por un pedal en F mixolidio, lo cual dentro de las categorías establecidas por el compositor Ron Miller, se clasifica como lineal modal
+							a(href="../images/obras/a-bordo-de-tu-voz/a-bordo-de-tu-voz-ejemplo-4.jpg" data-lity data-lity-desc="A bordo de tu voz ejemplo 5")  (Ejemplo 5).
+							| Posterior a la introducción, la armonía del tema no presenta cambios o sustituciones, los solos se desarrollan sobre la misma armonía de la primera estrofa. 
+							
+						p Después de la sección de solos improvisados, se encuentra la aplicación de diferentes herramientas armónicas. La reexposición de la primera estrofa del tema fue rearmonizada buscando generar un esquema modal lineal. Los 16 compases de esta sección se presentan con tres acordes, Bb jónico, G eólico y D frigio. Siendo la melodía totalmente diatónica, se abrían las posibilidades de construir un vamp de carácter modal, empleando como bajo cualquier nota que estuviese presente en la tonalidad original. La sonoridad modal se construye a partir de la conjunción de tres elementos, la línea del bajo eléctrico, el ostinato rítmico-melódico del piano y los acordes de la guitarra eléctrica
+							a(href="../images/obras/a-bordo-de-tu-voz/a-bordo-de-tu-voz-ejemplo-5.jpg" data-lity data-lity-desc="A bordo de tu voz ejemplo 6")  (Ejemplo 6).
+							| Posterior a la primera estrofa, el ritmo armónico se va comprimiendo poco a poco, pasando de un cambio de acorde cada ocho o cuatro compases, a cambios de acorde por cada compás. De esta manera en el compás 117 se aplica la herramienta de rearmonización mayor/menor
+							a(href="../images/obras/a-bordo-de-tu-voz/a-bordo-de-tu-voz-ejemplo-6.jpg" data-lity data-lity-desc="A bordo de tu voz ejemplo 7")  (Ejemplo 7). 
+							
+						p En la  organización de los instrumentos de viento empleamos diferentes opciones. Inicialmente la melodía se presenta de manera solista en el saxofón y al final de la primera estrofa, flauta y trompeta se unen a la textura, creando una contramelodía armonizada por intervalos de cuarta, la cual genera un contraste rítmico frente a la melodía principal
+							a(href="../images/obras/a-bordo-de-tu-voz/a-bordo-de-tu-voz-ejemplo-7.jpg" data-lity data-lity-desc="A bordo de tu voz ejemplo 8")  (Ejemplo 8).
+							| La repetición de la primera estrofa fue organizada con los tres instrumentos armonizados de manera vertical. Flauta y trompeta tocan la melodía en octavas, mientras el saxofón alto se ubica como una voz intermedia, la cual sigue movimientos contrarios, paralelos y oblicuos. Desde la interválica esta voz genera, respecto a la melodía principal, intervalos como quintas, sextas y cuartas
+							a(href="../images/obras/a-bordo-de-tu-voz/a-bordo-de-tu-voz-ejemplo-8.jpg" data-lity data-lity-desc="A bordo de tu voz ejemplo 7")  (Ejemplo 9).
+							| Los esquemas de orquestación se basaron en una serie de bosquejos a través de los cuales, buscamos tener una visión preliminar de los recursos que iban a ser empleados en el arreglo
+							a(href="../images/obras/a-bordo-de-tu-voz/A-bordo-de-tu-voz-boceto-arreglo.jpg" data-lity data-lity-desc="A bordo de tu voz boceto arreglo")  (Ejemplo 10). 
+
+			
+				div.row
+					div.col
+						
+						div.buttons_down
+							a.btn-primary.animsition-link(href='/obras/el-beso-que-le-robe-a-la-luna.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span El beso que le robé a la luna
+								
+					
+		//- Footer	
+		+footer-block("footer-pages")
+		
+		
+		
+
+

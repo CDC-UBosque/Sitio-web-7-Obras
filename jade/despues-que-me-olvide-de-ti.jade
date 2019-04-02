@@ -1,0 +1,99 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - Después que me olvide de tí
+
+block content
+	
+	//- Body tag
+	body.obras_pages
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out-down" data-animsition-out-duration="1000")
+			div.container
+				
+				div.row
+					div.col
+						//- Right vertical text (legal)		
+						+right-vertical-text
+						
+				div.row.content_box
+					div.col-lg-10
+					
+						div.buttons_up
+							a.btn-primary.animsition-link(href='/obras/el-beso-que-le-robe-a-la-luna.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span El beso que le robé a la luna
+								
+						//- video	
+						div.banner-video.wow.fadeInUp
+							div.col-md-10#video
+								div.embed-container
+									iframe(src="#" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+									
+						div.caption.col-md-5.offset-md-7
+							p La aparición de nuevas formas de abordar los procesos creativos alrededor de las músicas de la región andina colombiana, no son producto de hechos aislados,  la  identidad de estas expresiones ha estado marcada por el  cambio: desde sus comienzos el diálogo de lo europeo, lo mestizo y lo indígena ha estado presente. (Pérez 2010) 
+				
+				div.row.content_box
+					div.col-lg-5
+						
+						h5 Obra
+						h1 Después que me olvide de tí
+						
+						p Después que me olvide de ti, es un pasillo escrito por el compositor Héctor Ochoa. En este arreglo aplicamos elementos rítmicos a través de los cuales buscamos difuminar algunas características propias del pasillo, tales como el ritmo propio en ¾ y la construcción simétrica de las frases. Esta exploración se evidencia en la segunda estrofa de la canción, la cual se presenta en un compás de 7/4. El cambio de métrica se fundamenta en la línea interpretada por el bajo eléctrico. Simultáneamente, a través del uso de un efecto de delay en la guitarra eléctrica, se presenta una textura tímbrica totalmente ajena a la sonoridades propias de las músicas de la región andina colombiana
+							a(href="../images/obras/despues-que-me-olvide-de-ti/Despues-ejemplo-1.jpg" data-lity data-lity-desc="Después que me olvide de tí ejemplo 2")  (ejemplo 1).
+							| Estos dos elementos, sumados a una rearmonización de carácter modal, plateu modal según la clasificaciones de Ron Miller (1996), pueden ser vinculados como características propias del jazz contemporáneo. 
+						
+						blockquote Desde su aparición, a finales del siglo XIX, el jazz ha pasado por distintas etapas, las cuales, en su gran mayoría, logran ser perfectamente clasificables, encontrando estilos con unas características musicales definidas, períodos de tiempo específicos y ubicaciones geográficas en donde se desarrollaron los estilos.  
+						
+						p Scott Deveaux y Gary Giddins, en su publicación Jazz Essential listening (2001), realizan un resumen de estas etapas, dividiéndolas en cuatro grandes periodos de tiempo. De acuerdo a los autores, a partir de la década de los ochenta definir un estilo, o estética predominante, se vuelve más ambiguo y no es posible encontrar una escuela o sonido único. Deveaux y Giddins, plantean el término lingua franca como un concepto que permitiría comprender el estado del jazz contemporáneo, el cual se ha desarrollado desde finales del siglo XX. La idea se refiere al lenguaje híbrido empleado, alrededor del siglo XVII, entre las diferentes nacionalidades que interactuaban en los puertos del mar mediterráneo. Entendiendo que desde finales del siglo XX, el jazz se ha establecido como un lenguaje híbrido, el término empleado por los autores, nos indica que no existe un único sonido en la actualidad, lo que se encuentra, es un escenario en el que confluyen diferentes lenguajes, influencias y conceptos; los cuales, en el marco de este proyecto, se denominaron como jazz contemporáneo. 
+
+						p En este contexto, se encuentran músicos de jazz latinoamericanos que han explorado el proceso de involucrar elementos de sus músicas locales, junto a sonoridades propias de otras prácticas. En el caso Colombiano, desde la década de los ochenta se ha presentado una generación de músicos que han abordado los lenguajes de las músicas tradicionales desde nuevas perspectivas. En este camino, han confluido intérpretes y compositores con formaciones diversas y perfiles que han generado nuevas maneras de ejecutar y componer a partir de estas prácticas (Pérez 2010). En un escenario en el que estas expresiones no encontraban lugar, siendo excluidas  de los conservatorios y desplazadas de la etiqueta de músicas nacionales, los festivales se establecieron como un mecanismo de preservación de estas músicas. A pesar de este imaginario, los cambios que se dieron en los procesos de educación musical,  formas de vida y los rompimientos de fronteras, generaron la aparición de músicos que retomaron el carácter de diálogo e hibridación (Pérez 2010). 
+
+						p De esa forma,  la creación de los arreglos fué desarrollada en un marco en el cual buscamos tener un balance entre elementos diversos, las características propias de los lenguajes musicales que entrarían en diálogo y el proceso de construcción de las obras, desarrollo en el cual confluyeron tanto la espontaneidad, improvisación e intuición, como criterios que estuvieron fundamentados en el análisis musical. 
+
+						
+			div.banner_obras 
+				img(src="../images/obras/despues-que-me-olvide-de-ti/despues-que-me-olvide-de-ti.jpg" alt="Después que me olvide de tí")
+			div.container
+			
+				div.row.content_box
+					div.col-lg-5
+							
+						p Tomando como referencia los conceptos expuestos por el arreglista y compositor John La Barbera en su artículo “John La Barbera On Jazz Arranging”, desarrollamos diferentes opciones para aplicar en el proceso de orquestación. Al igual que las demás obras presentes en el proyecto, este proceso tomó como punto de partida la elaboración de bocetos, los cuales permitieron visualizar la ideas musicales de una manera clara y organizada
+							a(href="../images/obras/despues-que-me-olvide-de-ti/Despues-que-me-olvide-de-ti-boceto-arreglo.jpg" data-lity data-lity-desc="Después que me olvide de tí ejemplo 2")  (ejemplo 2). 
+
+						p En el tratamiento orquestal buscamos crear variedad, yendo, de texturas sencillas las cuales exploraban una sonoridad cercana a un cuarteto de jazz, a espacios en los cuales se aprovechan todas la posibilidades de peso, amplitud y densidad presentes en el ensamble.  De esta forma, la melodía de la primera estrofa se presenta en el saxofón alto, acompañado únicamente del piano, bajo y la batería
+							a(href="../images/obras/despues-que-me-olvide-de-ti/Despues-ejemplo-6-compas-1-orquestacion.jpg" data-lity data-lity-desc="Después que me olvide de tí ejemplo 3")  (ejemplo 3).
+							| Al final de esta sección, encontramos como los tres instrumentos de viento interactuan simultaneamente, la melodía principal es interpretada por la flauta, mientras saxofón y trompeta complementan la textura a través de una contramelodía que genera tanto movimientos contrarios como  independientes frente a la primera voz
+							a(href="../images/obras/despues-que-me-olvide-de-ti/Despues-ejemplo-3-compas-12-orquestacion.jpg" data-lity data-lity-desc="Después que me olvide de tí ejemplo 4")  (ejemplo 4).
+							| Otra posibilidad que trabajamos fueron contramelodías basadas en escritura lineal, a través de las cuales, además de definir la armonía correspondiente, buscamos generar contrastes rítmicos, empleando figuraciones que se emparejaban con acentuaciones propias del pasillo
+							a(href="../images/obras/despues-que-me-olvide-de-ti/Despues-ejemplo-4-compas-18-orquestacion.jpg" data-lity data-lity-desc="Después que me olvide de tí ejemplo 5")  (ejemplo 5,)
+							a(href="../images/obras/despues-que-me-olvide-de-ti/Despues-ejemplo-5-compas-54-orquestacion.jpg" data-lity data-lity-desc="Después que me olvide de tí ejemplo 6")  (ejemplo 6). 
+
+						p Siendo el desarrollo armónico uno de los temas transversales de este proyecto, en el arreglo de esta pieza, encontramos la aplicación de herramientas que buscan desdibujar el carácter tonal de la obra original. En los fragmentos que fueron rearmonizados, aplicamos principalmente tres herramientas: modalidad, melody driven harmony y expansión del universo armónico tonal. Si bien encontramos pasajes en los cuales aplicamos únicamente uno de estos conceptos armónicos, esa no fue la única opción que empleamos. En el compás 115 vemos cómo confluyen dos herramientas totalmente diferentes, una que busca expandir las posibilidades desde lo funcional y otra que explora sonoridades ambiguas alejadas de lo tonal
+							a(href="../images/obras/despues-que-me-olvide-de-ti/Despues-ejemplo-6-compas-115-armonia.jpg" data-lity data-lity-desc="Después que me olvide de tí ejemplo 7")  (ejemplo 7)
+
+			
+				div.row
+					div.col
+						
+						div.buttons_down
+							a.btn-primary.animsition-link(href='/obras/despues-que-me-olvide-de-ti.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span Después que me olvide de tí
+								
+					
+		//- Footer	
+		+footer-block("footer-pages")
+		
+		
+		
+
+
