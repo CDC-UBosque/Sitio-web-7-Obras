@@ -14,6 +14,12 @@ footer{
     right: 0;
     color: $color_grey_light_2;
     
+    @media only screen and (max-width: $breakpoint_3){
+	    position: relative;
+		top: initial;
+		padding: 1rem;
+    }
+    
     div{
 	    //display: inline;
 	    
@@ -71,18 +77,29 @@ footer{
     }
     
     .left{
+	    align-self: center;
 	    @include grid-child-column (1, 2);
 		@include grid-child-row (1, 2);
-		align-self: center;
+		
+		@media only screen and (max-width: $breakpoint_3){
+			@include grid-child-column (1, 3);
+			@include grid-child-row (1, 2);
+		}
+		
     }
     
     .right{
+	    align-self: center;
 		@include grid-child-column (2, 3);
 		@include grid-child-row (1, 2);
-		align-self: center;
 		@include display-grid;
 		@include grid-parent-4-columns (auto, 3rem, 3rem, 3rem);
 		place-items: center;
+		
+		@media only screen and (max-width: $breakpoint_3){
+			@include grid-child-column (1, 3);
+			@include grid-child-row (2, 2);
+		}
 		    
 	    p{
 		    font-size: $font_size_legal_footer_text;

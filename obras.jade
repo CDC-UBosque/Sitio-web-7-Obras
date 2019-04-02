@@ -1,0 +1,118 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+
+block title
+	title 7 Obras - Obras
+
+block content
+		
+	//- Body tag
+	body
+		//- Header & menu
+		header
+			div.container
+				div.row
+					div.col
+						+header-logo
+						+menu
+		
+		div.main.animsition(data-animsition-in-class="fade-in-up" data-animsition-in-duration="1000" data-animsition-out="fade-out-down" data-animsition-out-duration="1000")
+			div.container
+				
+				div.row
+					div.col
+						//- Right vertical text (legal)
+						+right-vertical-text
+				
+				div.row.content_box.columns-2
+					div.col-lg-5
+					
+						div.buttons_up
+							a.btn-primary.animsition-link(href='/' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span Inicio
+						
+						h1 Obras
+						
+						div.card
+							//-div.photo
+								img(src="../images/equipo/francy_montalvo.jpg" alt="Francy Montalvo")
+							h2 El corazón de la caña
+							p El corazón de la Caña es un bambuco escrito por José A. Morales, compositor de temas como Pueblito Viejo, Campesina Santandereana, Yo también tuve 20 años, Pescador, Lucero y rio, entre otros.
+							div.buttons_right
+								a.btn-primary.button.down.animsition-link(href='../obras/el-corazon-de-la-cana.html' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000')
+									span Ver obra
+							
+						div.card
+							//-div.photo
+								img(src="../images/equipo/francy_montalvo.jpg" alt="Francy Montalvo")
+							h2 A pesar de tanto gris
+							p De las siete obras presentes en el proyecto, el arreglo de A Pesar de Tanto Gris, compuesta por Luz Marina Posada (2004), fue el primero en ser elaborado y estrenado en el Festival de Jazz de la Universidad de Louisville en Febrero de 2017.
+							div.buttons_right
+								a.btn-primary.button.down.animsition-link(href='../obras/a-pesar-de-tanto-gris.html' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000')
+									span Ver obra
+							
+						div.card
+							//-div.photo
+								img(src="../images/equipo/francy_montalvo.jpg" alt="Francy Montalvo")
+							h2 Pesares
+							p La obra de José Barros ha sido asociada principalmente con ritmos como la cumbia o el porro. Sin embargo, también compuso pasillos, boleros, tangos, merengues, valses, entre otros. Pesares, es un pasillo que fue compuesto para su segunda esposa, Amelia Caraballo. (Bassi 2015).
+							div.buttons_right
+								a.btn-primary.button.down.animsition-link(href='../obras/pesares.html' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000')
+									span Ver obra
+							
+						div.card
+							//-div.photo
+								img(src="../images/equipo/francy_montalvo.jpg" alt="Francy Montalvo")
+							h2 El vuelo
+							p El vuelo es un bambuco compuesto por Luz Marina Posada (2006), cantautora antioqueña que en los últimos años se ha posicionado como uno de los referentes más importantes en la canción andina colombiana, siendo ganadora y finalista de Festivales como Hatoviejo-Cotrafa (2010), Festival Nacional del Bunde (2011)y Festival Nacional del Bambuco (2004).
+							div.buttons_right
+								a.btn-primary.button.down.animsition-link(href='../obras/el-vuelo.html' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000')
+									span Ver obra
+							
+						
+							
+					div.col-lg-5.columns-2
+						div.card
+							//-div.photo
+								img(src="../images/equipo/francy_montalvo.jpg" alt="Francy Montalvo")
+							h2 A bordo de tu voz
+							p A Bordo de tu voz es una guabina compuesta por Luz Marina Posada (2006). En el arreglo buscamos crear un contraste entre dos componentes, una primera sección que mantiene una idea bastante cercana al original, y una reexposición en la cual se desdibujan completamente los elementos armónicos, rítmicos y tímbricos.
+							div.buttons_right
+								a.btn-primary.button.down.animsition-link(href='../obras/a-bordo-de-tu-voz.html' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000')
+									span Ver obra
+									
+						div.card
+							//-div.photo
+								img(src="../images/equipo/francy_montalvo.jpg" alt="Francy Montalvo")
+							h2 El beso que le robé a la luna
+							p A Bordo de tu voz es una guabina compuesta por Luz Marina Posada (2006). En el arreglo buscamos crear un contraste entre dos componentes, una primera sección que mantiene una idea bastante cercana al original, y una reexposición en la cual se desdibujan completamente los elementos armónicos, rítmicos y tímbricos.
+							div.buttons_right
+								a.btn-primary.button.down.animsition-link(href='../obras/el-beso-que-le-robe-a-la-luna.html' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000')
+									span Ver obra
+							
+						div.card
+							//-div.photo
+								img(src="../images/equipo/francy_montalvo.jpg" alt="Francy Montalvo")
+							h2 Después que me olvide de ti
+							p Después que me olvide de ti, es un pasillo escrito por el compositor Héctor Ochoa. En este arreglo aplicamos elementos rítmicos a través de los cuales buscamos difuminar algunas características propias del pasillo, tales como el ritmo propio en ¾ y la construcción simétrica de las frases.
+							div.buttons_right
+								a.btn-primary.button.down.animsition-link(href='../obras/despues-que-me-olvide-de-ti.html' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000')
+									span Ver obra
+						
+								
+				div.row
+					div.col
+						
+						div.buttons_down
+							a.btn-primary.animsition-link(href='/como-lo-hicimos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span ¿Cómo lo hicimos?
+							a.btn-primary.animsition-link(href='/quienes-lo-hicimos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span ¿Quiénes lo hicimos? 
+							a.btn-primary.animsition-link(href='/hablemos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+								span Hablemos
+		
+		//- Footer	
+		+footer-block("footer-pages")
+		
+		

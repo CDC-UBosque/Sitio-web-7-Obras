@@ -12,14 +12,14 @@ $correo1 = $_POST['correo1'];
 $tel1 = $_POST['tel1'];
 $comentario1 = $_POST['comentario1'];
 
-$to = "seguragabriel@unbosque.edu.co";
-$subject = "Formulario Página Web 7 Obras";
+$to = "gabrielsegurao@aol.com";
+$subject = "Formulario Pagina Web 7 Obras";
 $message .= "\r\n".'Nombres:    '.$nombre1;
 $message .= "\r\n".'Correo Electrónico:    '.$correo1;
 $message .= "\r\n".'Teléfono:    '.$tel1;
-$message .= "\r\n".'Comentarios Adicionales:    '.$tel1;
+$message .= "\r\n".'Comentarios Adicionales:    '.$comentario1;
 $from = "    7 Obras";
-$headers = "From: Formulario Página Web 7 Obras" . $from;
+$headers = "From: Formulario Pagina Web 7 Obras Universidad El Bosque" . $from;
 
 if(mail($to,$subject,$message,$headers)){
 echo "Mail Sent.";

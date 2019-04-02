@@ -26,32 +26,36 @@ block content
 						div.content_box_home.formulario
 						
 							div.buttons_up
-								a.btn-primary.button.up(href='../index.html')
-									span Obras
+								a.btn-primary.button.down.animsition-link(href='/obras.html' data-animsition-out-class='fade-out-left' data-animsition-out-duration='1000')
+									span Obras 
+								a.btn-primary.button.down.animsition-link(href='/como-lo-hicimos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+									span ¿Cómo lo hicimos? 
+								a.btn-primary.button.down.animsition-link(href='/quienes-lo-hicimos.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
+									span ¿Quiénes lo hicimos?
 									
 							div.title_items
 								h2 Hablemos
 								p A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.
 							
-							form.col-lg-5#formulario(name="formulario" method="post" action="php/send.php")
+							form.col-lg-5#formulario(name="contactform" method="post" action="php/send_form_email.php")
 								div.form-group
-									input(type="text" class="form-control" id="nombre1" aria-describedby="emailHelp" placeholder="Nombre completo" required="true")
+									input(type="text" class="form-control" id="first_name" name="first_name" aria-describedby="emailHelp" placeholder="Nombre completo" required="true")
 									
 								div.form-group
-									input(type="email" class="form-control" id="correo1" aria-describedby="emailHelp" placeholder="Correo electrónico" required="true")
+									input(type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Correo electrónico" required="true")
 									
 								div.form-group
-									input(type="tel" class="form-control" id="tel1" aria-describedby="emailHelp" placeholder="Teléfono" required="true")
+									input(type="tel" class="form-control" id="telephone" name="telephone" aria-describedby="emailHelp" placeholder="Teléfono" required="true")
 									
 								div.form-group
-									textarea(class="form-control" id="comentario1" rows="3" placeholder="Comentar" required="true")
+									textarea(class="form-control" id="comments" name="comments" rows="3" placeholder="Comentar" required="true")
 									
 								div.form-group.form-check
 									input(type="checkbox" class="form-check-input" id="check1" required="true")
 									label(class="form-check-label" for="check1") Autorizo a la Universidad El Bosque para el envío de información. 
 										a(href="#") Términos y condiciones
 									
-								button.btn.btn-primary(type="submit" ) Enviar
+								button.btn.btn-primary(type="submit" value="Submit") Enviar
 												
 							
 							//- Right vertical text (legal)		

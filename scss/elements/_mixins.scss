@@ -413,3 +413,27 @@
 	}
 	
 }
+
+@mixin hover-links($color-hover){
+	
+	&:after{
+		position: absolute;
+		background: $color-hover;
+		content: "";
+		bottom: -3px;
+		left: 0;
+		width: 0%;
+		height: 2px;
+		@include prefix(transition, all .3s ease-in-out, webkit moz);
+	}
+	
+	&:hover{
+		
+		&:after{
+			width: 100%;
+			right: 0;
+		}
+			
+	}
+	
+}

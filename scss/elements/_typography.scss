@@ -181,6 +181,17 @@ $menu-home-color: $color_white;
 	font-weight: $menu-home-font-weight;
 	font-family: $menu-home-font-family;
 	color: $menu-home-color;
+	
+	@media only screen and (max-width: $breakpoint_3){
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	
+	@media only screen and (max-width: $breakpoint_4){
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	
 }
 
 /* h1 font style */
@@ -309,6 +320,12 @@ $menu-side-color: $color_purple;
 	font-weight: $menu-side-font-weight;
 	font-family: $menu-side-font-family;
 	color: $menu-side-color;
+	
+	@media only screen and (max-width: $breakpoint_3){
+		font-size: $font_size_bigger_regular_text;
+		line-height: $line_height_bigger_regular_text;
+	}
+	
 }
 
 /* button font style */

@@ -6,7 +6,15 @@
 	position: absolute;
 	right: calc(0px - 15rem);
     top: 20rem;
-    transform: rotate(-90deg);
+    @include prefix(transform, rotate(-90deg), webkit moz);
+    
+    @media only screen and (max-width: $breakpoint_4){
+		position: relative;
+		right: initial;
+		top: initial;
+		margin-bottom: 2rem;
+		@include prefix(transform, initial, webkit moz);
+    }
 	
 	span{
 		
@@ -16,6 +24,11 @@
 		
 		&:nth-child(2){
 			margin-left: 10rem;
+			
+			@media only screen and (max-width: $breakpoint_4){
+				margin-left: .5rem;
+			}
+			
 		}
 		
 	}

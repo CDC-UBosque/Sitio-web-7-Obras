@@ -2,8 +2,8 @@
 // --------------------------------------------------- //
 body.frontpage{
 	
-	background: url(../../images/bg_home.jpg);
-	background-size: cover;
+	background: url(../../images/bg_home.jpg) no-repeat center center fixed;
+	@include prefix(background-size, cover, webkit moz);
 	
 	.content_box_home{
 			
@@ -33,9 +33,14 @@ body.frontpage{
 				@include menu_home ();
 				margin-bottom: 0;
 				
+				@media only screen and (max-width: $breakpoint_4){
+					margin-bottom: .5rem;
+				}
+				
 				a{
 					color: $color_white;
 					text-decoration: none;
+					@include hover-links($color_white);
 				}
 				
 			}

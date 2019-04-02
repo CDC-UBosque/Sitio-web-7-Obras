@@ -1,7 +1,7 @@
 //- ---------------------------- header logo ------------------------------- //
 mixin header-logo
 	div.logo_header_UEB
-		a.button.up(href='../index.html')
+		a.button.up.animsition-link(href='../index.html' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000')
 			img(src="../images/svg/logo-UEB.svg" alt="Universidad El Bosque")
 
 
@@ -13,30 +13,33 @@ mixin menu
 			div.icon-list
 				ul.dl-menu
 					li
-						a(href='#' class='title-menu button up'): span Obras
+						a.animsition-link(href='../' class='title-menu button up' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000'): span Inicio
+						
+					li
+						a.animsition-link(href='../obras.html' class='title-menu button up' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000'): span Obras
 						
 						ul
 							li
-								a(href='../obras/el-corazon-de-la-cana.html' class='subtitle-menu button up'): span El corazón de la caña
+								a.animsition-link(href='../obras/el-corazon-de-la-cana.html' class='subtitle-menu button up' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000'): span El corazón de la caña
 							li
-								a(href='../obras/a-pesar-de-tanto-gris.html' class='subtitle-menu button up'): span A pesar de tanto gris
+								a.animsition-link(href='../obras/a-pesar-de-tanto-gris.html' class='subtitle-menu button up' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000'): span A pesar de tanto gris
 							li
-								a(href='../obras/pesares.html' class='subtitle-menu button up'): span Pesares
+								a.animsition-link(href='../obras/pesares.html' class='subtitle-menu button up' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000'): span Pesares
 							li
-								a(href='../obras/el-vuelo.html' class='subtitle-menu button up'): span El vuelo
+								a.animsition-link(href='../obras/el-vuelo.html' class='subtitle-menu button up' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000'): span El vuelo
 							li
-								a(href='../obras/a-bordo-de-tu-voz.html' class='subtitle-menu button up'): span A bordo de tu voz
+								a.animsition-link(href='../obras/a-bordo-de-tu-voz.html' class='subtitle-menu button up' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000'): span A bordo de tu voz
 							li
-								a(href='../obras/el-beso-que-le-robe-a-la-luna.html' class='subtitle-menu button up'): span El beso que le robé a la luna
+								a.animsition-link(href='../obras/el-beso-que-le-robe-a-la-luna.html' class='subtitle-menu button up' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000'): span El beso que le robé a la luna
 							li
-								a(href='../obras/despues-que-me-olvide-de-ti.html' class='subtitle-menu button up'): span Después que me olvide de tí					
+								a.animsition-link(href='../obras/despues-que-me-olvide-de-ti.html' class='subtitle-menu button up' data-animsition-out-class='fade-out-right' data-animsition-out-duration='1000'): span Después que me olvide de tí					
 					 
 					li
-						a(href='../como-lo-hicimos.html' class='title-menu button up'): span ¿Cómo lo hicimos?
+						a.animsition-link(href='../como-lo-hicimos.html' class='title-menu button up' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000'): span ¿Cómo lo hicimos?
 					li
-						a(href='../quienes-lo-hicimos' class='title-menu button up'): span ¿Quienes lo hicimos?
+						a.animsition-link(href='../quienes-lo-hicimos' class='title-menu button up' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000'): span ¿Quienes lo hicimos?
 					li
-						a(href='../hablemos.html' class='title-menu button up'): span Hablemos
+						a.animsition-link(href='../hablemos.html' class='title-menu button up' data-animsition-out-class='fade-out-up' data-animsition-out-duration='1000'): span Hablemos
 					
 		button(class='close-button' id='close-button') Close Menu
 		
