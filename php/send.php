@@ -7,23 +7,25 @@ mail - Correo Electronico
 com - Comentarios Adicionales
 */
 
-$nom = $_POST['nom'];
-$mail = $_POST['mail'];
-$com = $_POST['com'];
+$nombre1 = $_POST['nombre1'];
+$correo1 = $_POST['correo1'];
+$tel1 = $_POST['tel1'];
+$comentario1 = $_POST['comentario1'];
 
-$to = "gabriel.segura@sugorar.com";
-$subject = "Portfolio Contact";
-$message .= "\r\n".'Nombres:    '.$nom;
-$message .= "\r\n".'Correo Electronico:    '.$mail;
-$message .= "\r\n".'Comentarios Adicionales:    '.$com;
-$from = "    Portfolio";
-$headers = "From: Portfolio" . $from;
+$to = "seguragabriel@unbosque.edu.co";
+$subject = "Formulario Página Web 7 Obras";
+$message .= "\r\n".'Nombres:    '.$nombre1;
+$message .= "\r\n".'Correo Electrónico:    '.$correo1;
+$message .= "\r\n".'Teléfono:    '.$tel1;
+$message .= "\r\n".'Comentarios Adicionales:    '.$tel1;
+$from = "    7 Obras";
+$headers = "From: Formulario Página Web 7 Obras" . $from;
 
 if(mail($to,$subject,$message,$headers)){
 echo "Mail Sent.";
 ?>
 <script>
-  window.location.assign("http://www.sugorar.com/pages/contactsend.php");
+  window.location.assign("../hablemos-gracias.html");
 </script>
 <?php
 }
