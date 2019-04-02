@@ -9,11 +9,12 @@
     @include prefix(transform, rotate(-90deg), webkit moz);
     
     @media only screen and (max-width: $breakpoint_4){
-		position: relative;
-		right: initial;
-		top: initial;
-		margin-bottom: 2rem;
-		@include prefix(transform, initial, webkit moz);
+		//position: relative;
+		//right: initial;
+		//top: initial;
+		//margin-bottom: 2rem;
+		//@include prefix(transform, initial, webkit moz);
+		right: calc(0px - 10.5rem);
     }
 	
 	span{

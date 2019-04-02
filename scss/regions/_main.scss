@@ -11,7 +11,7 @@
 			@include display-grid;
 			@include grid-parent-1-columns (1fr);
 			
-			.row{
+			/*.row{
 				
 				&:nth-child(1){
 					@include grid-child-column (1, 2);
@@ -28,7 +28,7 @@
 					@include grid-child-row (2, 3);
 				}
 				
-			}
+			}*/
 			
 		}
 		
@@ -173,7 +173,7 @@
 		}
 		
 		@media only screen and (max-width: $breakpoint_4){
-			padding-right: 0rem;
+			padding-right: 1rem;
 		}
 		
 		/*> div{
