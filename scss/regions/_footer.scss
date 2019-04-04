@@ -14,7 +14,7 @@ footer{
     right: 0;
     color: $color_grey_light_2;
     
-    @media only screen and (max-width: $breakpoint_3){
+    @media only screen and (max-width: $breakpoint_3) , screen and (max-height: 800px){
 	    position: relative;
 		top: initial;
 		padding: 1rem;
@@ -105,6 +105,7 @@ footer{
 		    font-size: $font_size_legal_footer_text;
 		    line-height: $line_height_legal_footer_text;
 		    display: inline-block;
+			margin-bottom: 0;
 		    @include grid-child-column (1, 2);
 			@include grid-child-row (1, 2);
 			justify-self: end;

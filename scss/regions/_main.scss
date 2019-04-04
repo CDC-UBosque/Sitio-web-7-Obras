@@ -66,6 +66,17 @@
 		padding: 0.9rem 0;
 		margin: 0 0 2rem;
 		
+		@media only screen and (max-width: $breakpoint_3){
+			
+			a.button,
+			a.btn-primary{
+				display: block;
+				width: auto;
+				width: fit-content;
+			}
+			
+		}
+		
 		a{
 			
 			&:hover{
@@ -82,7 +93,7 @@
 	
 	.buttons_left{
 		padding: 0.9rem 0;
-		margin: 0;
+		margin: 0 0 1rem;
 		@include prefix(transition, all .2s ease-in-out, webkit moz o);
 		
 		&:hover{
@@ -120,7 +131,7 @@
 	
 	.buttons_right{
 		padding: 0.9rem 0;
-		margin: 0;
+		margin: 0 0 1rem;
 		@include prefix(transition, all .2s ease-in-out, webkit moz o);
 		
 		//&:hover{

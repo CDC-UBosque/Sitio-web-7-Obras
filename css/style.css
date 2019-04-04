@@ -2147,6 +2147,8 @@ body header {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg); }
+      body header .menu-wrap .close-button:focus {
+        outline: none; }
   body header .menu-button {
     position: absolute;
     z-index: 1000;
@@ -2172,6 +2174,8 @@ body header {
       background: -o-linear-gradient(#FF532E 20%, transparent 20%, transparent 40%, #FF532E 40%, #FF532E 60%, transparent 60%, transparent 80%, #FF532E 80%);
       background: linear-gradient(#FF532E 20%, transparent 20%, transparent 40%, #FF532E 40%, #FF532E 60%, transparent 60%, transparent 80%, #FF532E 80%);
       content: ''; }
+    body header .menu-button:focus {
+      outline: none; }
 
 body.show-menu .menu-wrap {
   right: 0;
@@ -2181,6 +2185,19 @@ body.show-menu .menu-wrap {
   -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out; }
 
+@media screen and (max-height: 800px) {
+  .content_box_home .right_vertical_text {
+    position: initial;
+    right: initial;
+    top: initial;
+    -webkit-transform: initial;
+    -moz-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
+    margin: 2rem 0; }
+    .content_box_home .right_vertical_text span:nth-child(2) {
+      margin-left: .5rem; } }
+
 .right_vertical_text {
   font-size: 13px;
   line-height: 18px;
@@ -2189,7 +2206,7 @@ body.show-menu .menu-wrap {
   color: #FF532E;
   position: absolute;
   right: calc(0px - 15rem);
-  top: 20rem;
+  top: 15rem;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -2227,7 +2244,7 @@ footer {
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     footer {
       display: -ms-grid; } }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px), screen and (max-height: 800px) {
     footer {
       position: relative;
       top: initial;
@@ -2288,12 +2305,13 @@ footer {
       text-decoration: none;
       overflow: hidden;
       display: inline-block;
-      font-size: 9px;
+      font-size: 10px;
       line-height: 14px;
       border: 1px solid #ffffff;
       opacity: 0.6;
       padding: .3rem .5rem;
       margin: 0 0.5rem 0 0;
+      text-transform: uppercase;
       /*&:after{
 		position: absolute;
 		content: "";
@@ -2363,9 +2381,10 @@ footer {
         -ms-grid-row: 2;
         -ms-grid-row-span: 0; } }
     footer .right p {
-      font-size: 9px;
+      font-size: 10px;
       line-height: 14px;
       display: inline-block;
+      margin-bottom: 0;
       grid-column: 1/2;
       -ms-grid-column: 1;
       -ms-grid-column-span: 1;
@@ -2416,7 +2435,7 @@ footer.pages {
     text-decoration: none;
     overflow: hidden;
     display: inline-block;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 14px;
     border: 1px solid #9B9B9B;
     opacity: 0.6;
@@ -2500,11 +2519,19 @@ footer.pages {
   .main .buttons_up {
     padding: 0.9rem 0;
     margin: 0 0 2rem; }
+    @media only screen and (max-width: 768px) {
+      .main .buttons_up a.button,
+      .main .buttons_up a.btn-primary {
+        display: block;
+        width: auto;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; } }
     .main .buttons_up a:hover:before {
       opacity: 1; }
   .main .buttons_left {
     padding: 0.9rem 0;
-    margin: 0;
+    margin: 0 0 1rem;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -2533,7 +2560,7 @@ footer.pages {
       opacity: 1; }
   .main .buttons_right {
     padding: 0.9rem 0;
-    margin: 0;
+    margin: 0 0 1rem;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;

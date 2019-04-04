@@ -1,19 +1,42 @@
 // ------------------------ menu side --------------------------- //
 // --------------------------------------------------- //
+
+@media screen and (max-height: 800px){
+	
+	.content_box_home{
+		
+		.right_vertical_text{
+			position: initial;
+			right: initial;
+			top: initial;
+			@include prefix(transform, initial, webkit moz);
+			margin: 2rem 0;
+			
+			span{
+				
+				&:nth-child(2){
+					margin-left: .5rem;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
 .right_vertical_text{
 	
 	@include legal_right_footer ();
 	position: absolute;
 	right: calc(0px - 15rem);
-    top: 20rem;
+    top: 15rem;
     @include prefix(transform, rotate(-90deg), webkit moz);
     
+    
+    
     @media only screen and (max-width: $breakpoint_4){
-		//position: relative;
-		//right: initial;
-		//top: initial;
-		//margin-bottom: 2rem;
-		//@include prefix(transform, initial, webkit moz);
 		right: calc(0px - 10.5rem);
     }
 	

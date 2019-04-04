@@ -134,6 +134,10 @@ body{
 					transform: rotate(-45deg);
 			    }
 			    
+			    &:focus{
+				    outline: none;
+			    }
+			    
 			}
 			
 		}
@@ -162,6 +166,10 @@ body{
 			    background:  linear-gradient($color_orange 20%, transparent 20%, transparent 40%, $color_orange 40%, $color_orange 60%, transparent 60%, transparent 80%, $color_orange 80%);
 			    //background: $color_orange;
 			    content: '';
+		    }
+		    
+		    &:focus{
+			    outline: none;
 		    }
 		    
 		}
