@@ -2220,6 +2220,10 @@ body.show-menu .menu-wrap {
       .right_vertical_text span:nth-child(2) {
         margin-left: .5rem; } }
 
+.form footer {
+  position: relative;
+  top: initial; }
+
 footer {
   padding: 1rem 2rem;
   position: absolute;
