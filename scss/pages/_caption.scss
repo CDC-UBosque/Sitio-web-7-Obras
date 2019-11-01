@@ -3,8 +3,27 @@
 
 .caption{
 	
+	position: relative;
+	
+	@media only screen and (max-width: $breakpoint_2){
+		margin-left: 10%;
+		max-width: 85%;
+		flex: 0 0 85%;
+	}
+	
 	p{
 		@include caption_text ();
+	}
+	
+	.playlist{
+		position: absolute;
+		top: 110%;
+		width: 100%;
+		
+		@media only screen and (max-width: $breakpoint_2){
+			position: relative;
+		}
+		
 	}
 	
 }
